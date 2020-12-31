@@ -13,7 +13,18 @@
 		77DCA7D9259D815100DA6183 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77DCA7D7259D815100DA6183 /* Main.storyboard */; };
 		77DCA7DB259D815200DA6183 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77DCA7DA259D815200DA6183 /* Assets.xcassets */; };
 		77DCA7DE259D815200DA6183 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77DCA7DC259D815200DA6183 /* LaunchScreen.storyboard */; };
+		77DCA7ED259D870C00DA6183 /* LearnAboutAnimalAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DCA7EC259D870C00DA6183 /* LearnAboutAnimalAppTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77DCA7EF259D870C00DA6183 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77DCA7C6259D815100DA6183 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77DCA7CD259D815100DA6183;
+			remoteInfo = LearnAboutAnimalApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		77DCA7CE259D815100DA6183 /* LearnAboutAnimalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnAboutAnimalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +35,20 @@
 		77DCA7DA259D815200DA6183 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77DCA7DD259D815200DA6183 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77DCA7DF259D815200DA6183 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77DCA7EA259D870C00DA6183 /* LearnAboutAnimalAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnAboutAnimalAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77DCA7EC259D870C00DA6183 /* LearnAboutAnimalAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnAboutAnimalAppTests.swift; sourceTree = "<group>"; };
+		77DCA7EE259D870C00DA6183 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		77DCA7CB259D815100DA6183 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77DCA7E7259D870C00DA6183 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				77DCA7D0259D815100DA6183 /* LearnAboutAnimalApp */,
+				77DCA7EB259D870C00DA6183 /* LearnAboutAnimalAppTests */,
 				77DCA7CF259D815100DA6183 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				77DCA7CE259D815100DA6183 /* LearnAboutAnimalApp.app */,
+				77DCA7EA259D870C00DA6183 /* LearnAboutAnimalAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +88,15 @@
 				77DCA7DF259D815200DA6183 /* Info.plist */,
 			);
 			path = LearnAboutAnimalApp;
+			sourceTree = "<group>";
+		};
+		77DCA7EB259D870C00DA6183 /* LearnAboutAnimalAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				77DCA7EC259D870C00DA6183 /* LearnAboutAnimalAppTests.swift */,
+				77DCA7EE259D870C00DA6183 /* Info.plist */,
+			);
+			path = LearnAboutAnimalAppTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +119,24 @@
 			productReference = 77DCA7CE259D815100DA6183 /* LearnAboutAnimalApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		77DCA7E9259D870C00DA6183 /* LearnAboutAnimalAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77DCA7F1259D870C00DA6183 /* Build configuration list for PBXNativeTarget "LearnAboutAnimalAppTests" */;
+			buildPhases = (
+				77DCA7E6259D870C00DA6183 /* Sources */,
+				77DCA7E7259D870C00DA6183 /* Frameworks */,
+				77DCA7E8259D870C00DA6183 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77DCA7F0259D870C00DA6183 /* PBXTargetDependency */,
+			);
+			name = LearnAboutAnimalAppTests;
+			productName = LearnAboutAnimalAppTests;
+			productReference = 77DCA7EA259D870C00DA6183 /* LearnAboutAnimalAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -98,6 +148,10 @@
 				TargetAttributes = {
 					77DCA7CD259D815100DA6183 = {
 						CreatedOnToolsVersion = 12.3;
+					};
+					77DCA7E9259D870C00DA6183 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 77DCA7CD259D815100DA6183;
 					};
 				};
 			};
@@ -115,6 +169,7 @@
 			projectRoot = "";
 			targets = (
 				77DCA7CD259D815100DA6183 /* LearnAboutAnimalApp */,
+				77DCA7E9259D870C00DA6183 /* LearnAboutAnimalAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +182,13 @@
 				77DCA7DE259D815200DA6183 /* LaunchScreen.storyboard in Resources */,
 				77DCA7DB259D815200DA6183 /* Assets.xcassets in Resources */,
 				77DCA7D9259D815100DA6183 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77DCA7E8259D870C00DA6183 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +205,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		77DCA7E6259D870C00DA6183 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77DCA7ED259D870C00DA6183 /* LearnAboutAnimalAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		77DCA7F0259D870C00DA6183 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77DCA7CD259D815100DA6183 /* LearnAboutAnimalApp */;
+			targetProxy = 77DCA7EF259D870C00DA6183 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		77DCA7D7259D815100DA6183 /* Main.storyboard */ = {
@@ -317,6 +395,44 @@
 			};
 			name = Release;
 		};
+		77DCA7F2259D870C00DA6183 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LearnAboutAnimalAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.skj.LearnAboutAnimalAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LearnAboutAnimalApp.app/LearnAboutAnimalApp";
+			};
+			name = Debug;
+		};
+		77DCA7F3259D870C00DA6183 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LearnAboutAnimalAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.skj.LearnAboutAnimalAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LearnAboutAnimalApp.app/LearnAboutAnimalApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -334,6 +450,15 @@
 			buildConfigurations = (
 				77DCA7E3259D815200DA6183 /* Debug */,
 				77DCA7E4259D815200DA6183 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77DCA7F1259D870C00DA6183 /* Build configuration list for PBXNativeTarget "LearnAboutAnimalAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77DCA7F2259D870C00DA6183 /* Debug */,
+				77DCA7F3259D870C00DA6183 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
