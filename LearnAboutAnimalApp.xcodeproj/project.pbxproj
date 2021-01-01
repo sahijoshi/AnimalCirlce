@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77D0F6DC259F704E004A9137 /* VisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0F6DB259F704E004A9137 /* VisionViewController.swift */; };
+		77D0F6E5259F720F004A9137 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 77D0F6E4259F720F004A9137 /* Resnet50.mlmodel */; };
+		77D0F6EA259F7FE8004A9137 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0F6E9259F7FE8004A9137 /* CGImagePropertyOrientation+UIImageOrientation.swift */; };
 		77DCA7D2259D815100DA6183 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DCA7D1259D815100DA6183 /* AppDelegate.swift */; };
 		77DCA7D4259D815100DA6183 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DCA7D3259D815100DA6183 /* SceneDelegate.swift */; };
-		77DCA7D6259D815100DA6183 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DCA7D5259D815100DA6183 /* ViewController.swift */; };
 		77DCA7D9259D815100DA6183 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77DCA7D7259D815100DA6183 /* Main.storyboard */; };
 		77DCA7DB259D815200DA6183 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77DCA7DA259D815200DA6183 /* Assets.xcassets */; };
 		77DCA7DE259D815200DA6183 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77DCA7DC259D815200DA6183 /* LaunchScreen.storyboard */; };
@@ -27,10 +29,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		77D0F6DB259F704E004A9137 /* VisionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionViewController.swift; sourceTree = "<group>"; };
+		77D0F6E4259F720F004A9137 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
+		77D0F6E9259F7FE8004A9137 /* CGImagePropertyOrientation+UIImageOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImagePropertyOrientation+UIImageOrientation.swift"; sourceTree = "<group>"; };
 		77DCA7CE259D815100DA6183 /* LearnAboutAnimalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnAboutAnimalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77DCA7D1259D815100DA6183 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77DCA7D3259D815100DA6183 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		77DCA7D5259D815100DA6183 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		77DCA7D8259D815100DA6183 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		77DCA7DA259D815200DA6183 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77DCA7DD259D815200DA6183 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,6 +62,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77D0F6D8259E2B8E004A9137 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				77D0F6DB259F704E004A9137 /* VisionViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		77D0F6E3259F71F3004A9137 /* TrainedModel */ = {
+			isa = PBXGroup;
+			children = (
+				77D0F6E4259F720F004A9137 /* Resnet50.mlmodel */,
+			);
+			path = TrainedModel;
+			sourceTree = "<group>";
+		};
+		77D0F6E8259F7FD9004A9137 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				77D0F6E9259F7FE8004A9137 /* CGImagePropertyOrientation+UIImageOrientation.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		77DCA7C5259D815100DA6183 = {
 			isa = PBXGroup;
 			children = (
@@ -79,9 +107,11 @@
 		77DCA7D0259D815100DA6183 /* LearnAboutAnimalApp */ = {
 			isa = PBXGroup;
 			children = (
+				77D0F6E8259F7FD9004A9137 /* Extensions */,
+				77D0F6E3259F71F3004A9137 /* TrainedModel */,
+				77D0F6D8259E2B8E004A9137 /* ViewControllers */,
 				77DCA7D1259D815100DA6183 /* AppDelegate.swift */,
 				77DCA7D3259D815100DA6183 /* SceneDelegate.swift */,
-				77DCA7D5259D815100DA6183 /* ViewController.swift */,
 				77DCA7D7259D815100DA6183 /* Main.storyboard */,
 				77DCA7DA259D815200DA6183 /* Assets.xcassets */,
 				77DCA7DC259D815200DA6183 /* LaunchScreen.storyboard */,
@@ -199,9 +229,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77DCA7D6259D815100DA6183 /* ViewController.swift in Sources */,
 				77DCA7D2259D815100DA6183 /* AppDelegate.swift in Sources */,
+				77D0F6DC259F704E004A9137 /* VisionViewController.swift in Sources */,
+				77D0F6E5259F720F004A9137 /* Resnet50.mlmodel in Sources */,
 				77DCA7D4259D815100DA6183 /* SceneDelegate.swift in Sources */,
+				77D0F6EA259F7FE8004A9137 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +397,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7S326ZG7QH;
 				INFOPLIST_FILE = LearnAboutAnimalApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -383,6 +416,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7S326ZG7QH;
 				INFOPLIST_FILE = LearnAboutAnimalApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -400,6 +434,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7S326ZG7QH;
 				INFOPLIST_FILE = LearnAboutAnimalAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -419,6 +454,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7S326ZG7QH;
 				INFOPLIST_FILE = LearnAboutAnimalAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
