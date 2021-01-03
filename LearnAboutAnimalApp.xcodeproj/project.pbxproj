@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		774332C2259FCB350095B88C /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774332C1259FCB350095B88C /* RoundedButton.swift */; };
+		779F7A6E25A23B87007898F2 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F7A6D25A23B87007898F2 /* SignupViewController.swift */; };
+		779F7A8225A250A9007898F2 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F7A7D25A250A9007898F2 /* Router.swift */; };
+		779F7A8325A250A9007898F2 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F7A7E25A250A9007898F2 /* NetworkLogger.swift */; };
+		779F7A8425A250A9007898F2 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F7A7F25A250A9007898F2 /* WebServices.swift */; };
+		779F7A8525A250A9007898F2 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F7A8025A250A9007898F2 /* NetworkRequest.swift */; };
+		779F7A8625A250A9007898F2 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F7A8125A250A9007898F2 /* NetworkError.swift */; };
+		779F7A8A25A250CE007898F2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F7A8925A250CD007898F2 /* Constants.swift */; };
+		779F7A8F25A25323007898F2 /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F7A8E25A25323007898F2 /* Signup.swift */; };
 		77D0F6DC259F704E004A9137 /* VisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0F6DB259F704E004A9137 /* VisionViewController.swift */; };
 		77D0F6E5259F720F004A9137 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 77D0F6E4259F720F004A9137 /* Resnet50.mlmodel */; };
 		77D0F6EA259F7FE8004A9137 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0F6E9259F7FE8004A9137 /* CGImagePropertyOrientation+UIImageOrientation.swift */; };
@@ -35,6 +43,14 @@
 
 /* Begin PBXFileReference section */
 		774332C1259FCB350095B88C /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		779F7A6D25A23B87007898F2 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		779F7A7D25A250A9007898F2 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		779F7A7E25A250A9007898F2 /* NetworkLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		779F7A7F25A250A9007898F2 /* WebServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
+		779F7A8025A250A9007898F2 /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		779F7A8125A250A9007898F2 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		779F7A8925A250CD007898F2 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		779F7A8E25A25323007898F2 /* Signup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
 		77D0F6DB259F704E004A9137 /* VisionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionViewController.swift; sourceTree = "<group>"; };
 		77D0F6E4259F720F004A9137 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
 		77D0F6E9259F7FE8004A9137 /* CGImagePropertyOrientation+UIImageOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImagePropertyOrientation+UIImageOrientation.swift"; sourceTree = "<group>"; };
@@ -72,11 +88,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		779F7A7C25A250A9007898F2 /* NetworkRequest */ = {
+			isa = PBXGroup;
+			children = (
+				779F7A7D25A250A9007898F2 /* Router.swift */,
+				779F7A7E25A250A9007898F2 /* NetworkLogger.swift */,
+				779F7A7F25A250A9007898F2 /* WebServices.swift */,
+				779F7A8025A250A9007898F2 /* NetworkRequest.swift */,
+				779F7A8125A250A9007898F2 /* NetworkError.swift */,
+			);
+			path = NetworkRequest;
+			sourceTree = "<group>";
+		};
+		779F7A8D25A252D8007898F2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				779F7A8E25A25323007898F2 /* Signup.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		77D0F6D8259E2B8E004A9137 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				77D0F6DB259F704E004A9137 /* VisionViewController.swift */,
 				77D0F6F1259FB4BC004A9137 /* LoginViewController.swift */,
+				779F7A6D25A23B87007898F2 /* SignupViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -113,6 +150,7 @@
 				77D0F6E8259F7FD9004A9137 /* Extensions */,
 				77D0F6F5259FBC46004A9137 /* CustomViews */,
 				77D0F6FE259FBD69004A9137 /* Util.swift */,
+				779F7A8925A250CD007898F2 /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -138,6 +176,8 @@
 		77DCA7D0259D815100DA6183 /* LearnAboutAnimalApp */ = {
 			isa = PBXGroup;
 			children = (
+				779F7A8D25A252D8007898F2 /* Models */,
+				779F7A7C25A250A9007898F2 /* NetworkRequest */,
 				77D0F6FD259FBD4B004A9137 /* Utilities */,
 				77D0F6E3259F71F3004A9137 /* TrainedModel */,
 				77D0F6D8259E2B8E004A9137 /* ViewControllers */,
@@ -261,8 +301,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				77D0F6F2259FB4BC004A9137 /* LoginViewController.swift in Sources */,
+				779F7A8A25A250CE007898F2 /* Constants.swift in Sources */,
+				779F7A8625A250A9007898F2 /* NetworkError.swift in Sources */,
 				774332C2259FCB350095B88C /* RoundedButton.swift in Sources */,
+				779F7A8425A250A9007898F2 /* WebServices.swift in Sources */,
+				779F7A8F25A25323007898F2 /* Signup.swift in Sources */,
+				779F7A6E25A23B87007898F2 /* SignupViewController.swift in Sources */,
+				779F7A8525A250A9007898F2 /* NetworkRequest.swift in Sources */,
 				77DCA7D2259D815100DA6183 /* AppDelegate.swift in Sources */,
+				779F7A8225A250A9007898F2 /* Router.swift in Sources */,
+				779F7A8325A250A9007898F2 /* NetworkLogger.swift in Sources */,
 				77D0F6F7259FBC63004A9137 /* BorderTextField.swift in Sources */,
 				77D0F705259FBDA5004A9137 /* UIColor+Extension.swift in Sources */,
 				77D0F6FF259FBD69004A9137 /* Util.swift in Sources */,

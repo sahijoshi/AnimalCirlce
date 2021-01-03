@@ -8,22 +8,22 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    @IBOutlet weak var txtEmail: BorderTextField!
+    @IBOutlet weak var txtPassword: BorderTextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.isHidden = true
     }
-    */
-
+    
+    @IBAction func loginAction(_ sender: Any) {
+        
+    }
+    
+    @IBAction func signup(_ sender: Any) {
+        performSegue(withIdentifier: "SignupViewController", sender: nil)
+    }
 }
