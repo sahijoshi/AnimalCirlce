@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		774332C2259FCB350095B88C /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774332C1259FCB350095B88C /* RoundedButton.swift */; };
 		77D0F6DC259F704E004A9137 /* VisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0F6DB259F704E004A9137 /* VisionViewController.swift */; };
 		77D0F6E5259F720F004A9137 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 77D0F6E4259F720F004A9137 /* Resnet50.mlmodel */; };
 		77D0F6EA259F7FE8004A9137 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0F6E9259F7FE8004A9137 /* CGImagePropertyOrientation+UIImageOrientation.swift */; };
+		77D0F6F2259FB4BC004A9137 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0F6F1259FB4BC004A9137 /* LoginViewController.swift */; };
+		77D0F6F7259FBC63004A9137 /* BorderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0F6F6259FBC63004A9137 /* BorderTextField.swift */; };
+		77D0F6FF259FBD69004A9137 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0F6FE259FBD69004A9137 /* Util.swift */; };
+		77D0F705259FBDA5004A9137 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0F704259FBDA5004A9137 /* UIColor+Extension.swift */; };
 		77DCA7D2259D815100DA6183 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DCA7D1259D815100DA6183 /* AppDelegate.swift */; };
 		77DCA7D4259D815100DA6183 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DCA7D3259D815100DA6183 /* SceneDelegate.swift */; };
 		77DCA7D9259D815100DA6183 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77DCA7D7259D815100DA6183 /* Main.storyboard */; };
@@ -29,9 +34,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		774332C1259FCB350095B88C /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		77D0F6DB259F704E004A9137 /* VisionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionViewController.swift; sourceTree = "<group>"; };
 		77D0F6E4259F720F004A9137 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
 		77D0F6E9259F7FE8004A9137 /* CGImagePropertyOrientation+UIImageOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImagePropertyOrientation+UIImageOrientation.swift"; sourceTree = "<group>"; };
+		77D0F6F1259FB4BC004A9137 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		77D0F6F6259FBC63004A9137 /* BorderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderTextField.swift; sourceTree = "<group>"; };
+		77D0F6FE259FBD69004A9137 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		77D0F704259FBDA5004A9137 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		77DCA7CE259D815100DA6183 /* LearnAboutAnimalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnAboutAnimalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77DCA7D1259D815100DA6183 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77DCA7D3259D815100DA6183 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				77D0F6DB259F704E004A9137 /* VisionViewController.swift */,
+				77D0F6F1259FB4BC004A9137 /* LoginViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -82,8 +93,28 @@
 			isa = PBXGroup;
 			children = (
 				77D0F6E9259F7FE8004A9137 /* CGImagePropertyOrientation+UIImageOrientation.swift */,
+				77D0F704259FBDA5004A9137 /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		77D0F6F5259FBC46004A9137 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				77D0F6F6259FBC63004A9137 /* BorderTextField.swift */,
+				774332C1259FCB350095B88C /* RoundedButton.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		77D0F6FD259FBD4B004A9137 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				77D0F6E8259F7FD9004A9137 /* Extensions */,
+				77D0F6F5259FBC46004A9137 /* CustomViews */,
+				77D0F6FE259FBD69004A9137 /* Util.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		77DCA7C5259D815100DA6183 = {
@@ -107,7 +138,7 @@
 		77DCA7D0259D815100DA6183 /* LearnAboutAnimalApp */ = {
 			isa = PBXGroup;
 			children = (
-				77D0F6E8259F7FD9004A9137 /* Extensions */,
+				77D0F6FD259FBD4B004A9137 /* Utilities */,
 				77D0F6E3259F71F3004A9137 /* TrainedModel */,
 				77D0F6D8259E2B8E004A9137 /* ViewControllers */,
 				77DCA7D1259D815100DA6183 /* AppDelegate.swift */,
@@ -229,7 +260,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77D0F6F2259FB4BC004A9137 /* LoginViewController.swift in Sources */,
+				774332C2259FCB350095B88C /* RoundedButton.swift in Sources */,
 				77DCA7D2259D815100DA6183 /* AppDelegate.swift in Sources */,
+				77D0F6F7259FBC63004A9137 /* BorderTextField.swift in Sources */,
+				77D0F705259FBDA5004A9137 /* UIColor+Extension.swift in Sources */,
+				77D0F6FF259FBD69004A9137 /* Util.swift in Sources */,
 				77D0F6DC259F704E004A9137 /* VisionViewController.swift in Sources */,
 				77D0F6E5259F720F004A9137 /* Resnet50.mlmodel in Sources */,
 				77DCA7D4259D815100DA6183 /* SceneDelegate.swift in Sources */,
