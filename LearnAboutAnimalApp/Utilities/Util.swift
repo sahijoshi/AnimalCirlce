@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 public func dLog<T>(_ object: @autoclosure () -> T, _ file: String = #file, _ function: String = #function, _ line: Int = #line) {
     #if DEBUG
@@ -13,3 +14,16 @@ public func dLog<T>(_ object: @autoclosure () -> T, _ file: String = #file, _ fu
         print(value)
     #endif
 }
+
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+
+    }
+
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}
+

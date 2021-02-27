@@ -7,19 +7,24 @@
 
 import Foundation
 
-struct Signup: Codable {
+class Signup: Codable {
 
-  enum CodingKeys: String, CodingKey {
-    case status
-  }
+    enum CodingKeys: String, CodingKey {
+      case message
+      case status
+    }
 
-  var status: Bool?
+    var message: String?
+    var status: Bool?
 
+    init (message: String?, status: Bool?) {
+      self.message = message
+      self.status = status
+    }
 
-
-  init(from decoder: Decoder) throws {
-    let container = try decoder.container(keyedBy: CodingKeys.self)
-    status = try container.decodeIfPresent(Bool.self, forKey: .status)
-  }
-
+    required init(from decoder: Decoder) throws {
+      let container = try decoder.container(keyedBy: CodingKeys.self)
+      message = try container.decodeIfPresent(String.self, forKey: .message)
+      status = try container.decodeIfPresent(Bool.self, forKey: .status)
+    }
 }

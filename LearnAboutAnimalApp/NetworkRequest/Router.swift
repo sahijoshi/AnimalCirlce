@@ -24,15 +24,16 @@ protocol URLConverter {
 }
 
 enum Router: EndPointType, URLConverter {
-    case signup
-    
+    case signup(payload: [String: String])
+    case login(credential: [String: String])
+
     var baseURL: String {
         return Constants.URL.baseUrl
     }
     
     var method: HTTPMethod {
         switch self {
-        case .signup: return .post
+            case .signup, .login: return .post
         }
     }
     
@@ -40,6 +41,17 @@ enum Router: EndPointType, URLConverter {
         switch self {
         case .signup:
             return "/signup"
+        case .login:
+            return "/login"
+        }
+    }
+    
+    var parameters: [String: String] {
+        switch self {
+        case .signup (let payload):
+            return payload
+        case .login (let credential):
+            return credential
         }
     }
     
@@ -47,10 +59,17 @@ enum Router: EndPointType, URLConverter {
         let baseUrl = URL(string: baseURL)
         let url = URL(string: (baseUrl?.appendingPathComponent(path).absoluteString.removingPercentEncoding)!)
         var urlRequest = URLRequest(url: url!, timeoutInterval: TimeInterval(10 * 1000))
-                
         urlRequest.httpMethod = method.rawValue
-        urlRequest.setValue("application/json", forHTTPHeaderField: "Accept")
         
+        if !parameters.isEmpty {
+            urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
+            do {
+                let jsonBody = try JSONSerialization.data(withJSONObject: parameters, options: .prettyPrinted)
+                urlRequest.httpBody = jsonBody
+            } catch {
+                
+            }
+        }
         NetworkLogger.log(request: urlRequest)
         return urlRequest
     }

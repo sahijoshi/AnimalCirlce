@@ -10,6 +10,6 @@ import Foundation
 
 struct Constants {
     struct URL {
-        static let baseUrl = "http://localhost:3000"
+        static let baseUrl = "https://learn-animal.herokuapp.com"
     }
 }

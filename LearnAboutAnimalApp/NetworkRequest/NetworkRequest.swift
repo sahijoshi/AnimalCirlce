@@ -22,7 +22,8 @@ class NetworkRequest {
     ///   - completion: This completion handler takes Result with data and error parameter return by URLSession.
     /// - Returns: Void
     
-    static func request<T: Decodable>(_ route: Router, with session:URLSession, completion: @escaping (Result<T, NetworkError>) -> () ) {
+    static func request<T: Decodable>(_ route: Router, completion: @escaping (Result<T, NetworkError>) -> () ) {
+        let session = URLSession.shared
         let request =  route.asURLRequest()
         let dataTask = session.dataTask(with: request) { (data, response, error) in
             

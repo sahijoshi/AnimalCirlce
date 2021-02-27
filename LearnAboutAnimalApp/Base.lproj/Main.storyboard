@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S6G-Bn-2X9">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -17,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hPA-2t-p13">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TXs-yB-Mka">
@@ -52,6 +53,7 @@
                             <constraint firstItem="iFK-6o-SNa" firstAttribute="trailing" secondItem="TXs-yB-Mka" secondAttribute="trailing" id="uEn-k5-2Vr"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="i7w-N2-CiO"/>
                     <connections>
                         <outlet property="lblMessage" destination="mBJ-l1-emi" id="eNZ-hj-7pC"/>
                         <outlet property="messageView" destination="TXs-yB-Mka" id="nZv-6J-58O"/>
@@ -60,7 +62,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1208.6956521739132" y="-27.455357142857142"/>
+            <point key="canvasLocation" x="1214" y="-81"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="fpC-ku-wC2">
@@ -171,7 +173,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="loginAction:" destination="Lld-54-1Mc" eventType="touchUpInside" id="ew8-PB-ovD"/>
+                                            <action selector="loginAction:" destination="Lld-54-1Mc" eventType="touchUpInside" id="QqP-ob-BrP"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ji-4Z-GEQ">
@@ -215,14 +217,15 @@
                     </view>
                     <navigationItem key="navigationItem" id="GL0-sZ-45F"/>
                     <connections>
-                        <outlet property="txtEmail" destination="8Ke-kG-fcU" id="Ce1-PR-qb8"/>
-                        <outlet property="txtPassword" destination="XKc-ug-JUl" id="CT8-4N-hWo"/>
+                        <outlet property="txtEmail" destination="8Ke-kG-fcU" id="ZnG-XR-rzR"/>
+                        <outlet property="txtPassword" destination="XKc-ug-JUl" id="qre-OP-wqq"/>
                         <segue destination="ZFr-Ic-k67" kind="show" identifier="SignupViewController" id="02y-gn-0WF"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="VisionViewController" id="of0-9e-neZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rxc-zz-2Iq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="434.78260869565219" y="-607.36607142857144"/>
+            <point key="canvasLocation" x="455" y="-625"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="cU4-2Z-xVv">

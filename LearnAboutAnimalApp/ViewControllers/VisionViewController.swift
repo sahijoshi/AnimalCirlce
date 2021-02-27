@@ -28,19 +28,19 @@ class VisionViewController: UIViewController {
     private var requests = [VNRequest]()
     var descriptions = [String]()
     
-    lazy var classificationRequest: VNCoreMLRequest = {
-        do {
-            let model = try VNCoreMLModel(for: Resnet50().model)
-            
-            let request = VNCoreMLRequest(model: model, completionHandler: { [weak self] request, error in
-                self?.processClassifications(for: request, error: error)
-            })
-            request.imageCropAndScaleOption = .centerCrop
-            return request
-        } catch {
-            fatalError("Failed to load Vision ML model: \(error)")
-        }
-    }()
+//    lazy var classificationRequest: VNCoreMLRequest = {
+//        do {
+//            let model = try VNCoreMLModel(for: Resnet50().model)
+//
+//            let request = VNCoreMLRequest(model: model, completionHandler: { [weak self] request, error in
+//                self?.processClassifications(for: request, error: error)
+//            })
+//            request.imageCropAndScaleOption = .centerCrop
+//            return request
+//        } catch {
+//            fatalError("Failed to load Vision ML model: \(error)")
+//        }
+//    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -166,83 +166,83 @@ class VisionViewController: UIViewController {
 //        }
     }
  
-    @IBAction func takePicture(_ sender: Any) {
-        guard UIImagePickerController.isSourceTypeAvailable(.camera) else {
-            presentPhotoPicker(sourceType: UIImagePickerController.SourceType.photoLibrary)
-            return
-        }
-        
-        let photoSourcePicker = UIAlertController()
-        let takePhoto = UIAlertAction(title: "Take Photo", style: .default) { [unowned self] _ in
-            self.presentPhotoPicker(sourceType: UIImagePickerController.SourceType.camera)
-        }
-        let choosePhoto = UIAlertAction(title: "Choose Photo", style: .default) { [unowned self] _ in
-            self.presentPhotoPicker(sourceType: UIImagePickerController.SourceType.photoLibrary)
-        }
-        
-        photoSourcePicker.addAction(takePhoto)
-        photoSourcePicker.addAction(choosePhoto)
-        photoSourcePicker.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-        
-        present(photoSourcePicker, animated: true)
-    }
+//    @IBAction func takePicture(_ sender: Any) {
+//        guard UIImagePickerController.isSourceTypeAvailable(.camera) else {
+//            presentPhotoPicker(sourceType: UIImagePickerController.SourceType.photoLibrary)
+//            return
+//        }
+//
+//        let photoSourcePicker = UIAlertController()
+//        let takePhoto = UIAlertAction(title: "Take Photo", style: .default) { [unowned self] _ in
+//            self.presentPhotoPicker(sourceType: UIImagePickerController.SourceType.camera)
+//        }
+//        let choosePhoto = UIAlertAction(title: "Choose Photo", style: .default) { [unowned self] _ in
+//            self.presentPhotoPicker(sourceType: UIImagePickerController.SourceType.photoLibrary)
+//        }
+//
+//        photoSourcePicker.addAction(takePhoto)
+//        photoSourcePicker.addAction(choosePhoto)
+//        photoSourcePicker.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+//
+//        present(photoSourcePicker, animated: true)
+//    }
     
-    func presentPhotoPicker(sourceType: UIImagePickerController.SourceType) {
-        let picker = UIImagePickerController()
-        picker.delegate = self
-        picker.sourceType = sourceType
-        present(picker, animated: true)
-    }
+//    func presentPhotoPicker(sourceType: UIImagePickerController.SourceType) {
+//        let picker = UIImagePickerController()
+//        picker.delegate = self
+//        picker.sourceType = sourceType
+//        present(picker, animated: true)
+//    }
     
-    func updateClassifications(for image: UIImage) {
-        lblMessage.text = "Classifying..."
-        
-        let orientation = CGImagePropertyOrientation(rawValue: UInt32(image.imageOrientation.rawValue))
-        guard let ciImage = CIImage(image: image) else { fatalError("Unable to create \(CIImage.self) from \(image).") }
-        
-        DispatchQueue.global(qos: .userInitiated).async {
-            let handler = VNImageRequestHandler(ciImage: ciImage, orientation: orientation!)
-            do {
-                try handler.perform([self.classificationRequest])
-            } catch {
-                /*
-                 This handler catches general image processing errors. The `classificationRequest`'s
-                 completion handler `processClassifications(_:error:)` catches errors specific
-                 to processing that request.
-                 */
-                print("Failed to perform classification.\n\(error.localizedDescription)")
-            }
-        }
-    }
+//    func updateClassifications(for image: UIImage) {
+//        lblMessage.text = "Classifying..."
+//
+//        let orientation = CGImagePropertyOrientation(rawValue: UInt32(image.imageOrientation.rawValue))
+//        guard let ciImage = CIImage(image: image) else { fatalError("Unable to create \(CIImage.self) from \(image).") }
+//
+//        DispatchQueue.global(qos: .userInitiated).async {
+//            let handler = VNImageRequestHandler(ciImage: ciImage, orientation: orientation!)
+//            do {
+//                try handler.perform([self.classificationRequest])
+//            } catch {
+//                /*
+//                 This handler catches general image processing errors. The `classificationRequest`'s
+//                 completion handler `processClassifications(_:error:)` catches errors specific
+//                 to processing that request.
+//                 */
+//                print("Failed to perform classification.\n\(error.localizedDescription)")
+//            }
+//        }
+//    }
     
-    func processClassifications(for request: VNRequest, error: Error?) {
-        DispatchQueue.main.async {
-            guard let results = request.results else {
-                self.lblMessage.text = "Unable to classify image.\n\(error!.localizedDescription)"
-                return
-            }
-            // The `results` will always be `VNClassificationObservation`s, as specified by the Core ML model in this project.
-            let classifications = results as! [VNClassificationObservation]
-            
-            if classifications.isEmpty {
-                self.lblMessage.text = "Nothing recognized."
-            } else {
-                // Display top classifications ranked by confidence in the UI.
-                let topClassifications = classifications.prefix(5)
-                let descriptions = topClassifications.map { classification in
-                    // Formats the classification for display; e.g. "(0.37) cliff, drop, drop-off".
-                    return String(format: "%@:  (%.2f%%)", classification.identifier, classification.confidence * 100)
-                }
-                
-                let descriptions1 = topClassifications.map { classification in
-                    return String(format: "%@", classification.identifier)
-                }
-                
-                self.descriptions = descriptions1
-                self.lblMessage.text = "Classification:\n" + descriptions.joined(separator: "\n")
-            }
-        }
-    }
+//    func processClassifications(for request: VNRequest, error: Error?) {
+//        DispatchQueue.main.async {
+//            guard let results = request.results else {
+//                self.lblMessage.text = "Unable to classify image.\n\(error!.localizedDescription)"
+//                return
+//            }
+//            // The `results` will always be `VNClassificationObservation`s, as specified by the Core ML model in this project.
+//            let classifications = results as! [VNClassificationObservation]
+//
+//            if classifications.isEmpty {
+//                self.lblMessage.text = "Nothing recognized."
+//            } else {
+//                // Display top classifications ranked by confidence in the UI.
+//                let topClassifications = classifications.prefix(5)
+//                let descriptions = topClassifications.map { classification in
+//                    // Formats the classification for display; e.g. "(0.37) cliff, drop, drop-off".
+//                    return String(format: "%@:  (%.2f%%)", classification.identifier, classification.confidence * 100)
+//                }
+//
+//                let descriptions1 = topClassifications.map { classification in
+//                    return String(format: "%@", classification.identifier)
+//                }
+//
+//                self.descriptions = descriptions1
+//                self.lblMessage.text = "Classification:\n" + descriptions.joined(separator: "\n")
+//            }
+//        }
+//    }
     
     @IBAction func searchAction(_ sender: Any) {
         performSegue(withIdentifier: "showSearchVC", sender: nil)
@@ -284,15 +284,15 @@ extension VisionViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
     }
 }
 
-extension VisionViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String: Any]) {
-        picker.dismiss(animated: true)
-        session.stopRunning()
-        configureViewHiddenProperty(hide: true)
-
-        // We always expect `imagePickerController(:didFinishPickingMediaWithInfo:)` to supply the original image.
-        let image = info[UIImagePickerController.InfoKey.originalImage.rawValue] as! UIImage
-//        imgView.image = image
-        updateClassifications(for: image)
-    }
-}
+//extension VisionViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+//    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String: Any]) {
+//        picker.dismiss(animated: true)
+//        session.stopRunning()
+//        configureViewHiddenProperty(hide: true)
+//
+//        // We always expect `imagePickerController(:didFinishPickingMediaWithInfo:)` to supply the original image.
+////        let image = info[UIImagePickerController.InfoKey.originalImage.rawValue] as! UIImage
+////        imgView.image = image
+////        updateClassifications(for: image)
+//    }
+//}

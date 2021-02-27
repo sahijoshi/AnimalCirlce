@@ -8,26 +8,19 @@
 
 import Foundation
 
-class WebServices {
-    var session = URLSession.shared
-    
-    /// This method get Modbus data from the server.
-    /// - Parameter completion: The completion handler takes Modbus model class parameter
-    /// - Returns: void
-    
-//    func getModbusData(completion: @escaping (Result<Modbus, NetworkError>) -> ()) {
-//        let router = Router.getModbusData
-//
-//        NetworkRequest.request(router, with: session) { (result: Result<Modbus, NetworkError>) in
-//            completion(result)
-//        }
-//    }
-    
-    func signup(completion: @escaping (Result<Signup, NetworkError>) -> ()) {
-        let router = Router.signup
-        
-        NetworkRequest.request(router, with: session) { (result: Result<Signup, NetworkError>) in
+class WebServices {    
+    static func signup(payload: [String: String], completion: @escaping (Result<Signup, NetworkError>) -> ()) {
+        let router = Router.signup(payload: payload)
+        NetworkRequest.request(router) { (result: Result<Signup, NetworkError>) in
             completion(result)
         }
     }
+    
+    static func login(credential: [String: String], completion: @escaping (Result<Login, NetworkError>) -> ()) {
+        let router = Router.login(credential: credential)
+        NetworkRequest.request(router) { (result: Result<Login, NetworkError>) in
+            completion(result)
+        }
+    }
+
 }
