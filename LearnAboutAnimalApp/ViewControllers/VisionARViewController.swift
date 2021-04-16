@@ -208,8 +208,20 @@ class VisionARViewController: UIViewController, UIGestureRecognizerDelegate, ARS
                 let physicalHeight: CGFloat = 0.09
                 let cornerRadius:CGFloat = 0.01
                 
+                var animalData = [String: String]()
+                if self.identifierString.lowercased() == "tiger" {
+                    animalData = DataProvider.dataTiger()
+                }
+
                 self.infoDetail = InfoDetail().loadView()
-//                self.infoDetail?.lblTitle.text = "Hello world"
+                self.infoDetail?.txtStatus.text = animalData["status"]
+                self.infoDetail?.txtClassification.text = animalData["classification"]
+                self.infoDetail?.txtDiet.text = animalData["diet"]
+                self.infoDetail?.txtLife.text = animalData["lifeSpan"]
+                self.infoDetail?.txtHeight.text = animalData["height"]
+                self.infoDetail?.txtWeight.text = animalData["weight"]
+                self.infoDetail?.txtHabitat.text = animalData["habitat"]
+
                 let webViewPlane = SCNPlane(width: physicalWidth, height: physicalHeight)
                 webViewPlane.cornerRadius = cornerRadius
                 
@@ -222,12 +234,8 @@ class VisionARViewController: UIViewController, UIGestureRecognizerDelegate, ARS
                 webViewNode.position.x += 0.05
 
                 self.infoBrief = InfoBrief().loadView()
-                self.infoBrief?.lblTitle.text = "African Elephant"
-                self.infoBrief?.txtBriefInfo.text = """
-The bush elephant is the largest living terrestial animal while the forest elephant is the third-largest.
-
-African elephants are found widely in Sib-Saharan Africa in dense forests, and deserts.
-"""
+                self.infoBrief?.lblTitle.text = animalData["name"]
+                self.infoBrief?.txtBriefInfo.text = animalData["detail"]
                 let infoBriefPlane = SCNPlane(width: physicalWidth, height: physicalHeight)
                 infoBriefPlane.cornerRadius = cornerRadius
                 

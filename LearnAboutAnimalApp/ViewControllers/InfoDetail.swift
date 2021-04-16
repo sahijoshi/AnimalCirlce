@@ -17,6 +17,7 @@ class InfoDetail: UIView {
     @IBOutlet weak var btnHabitat: UIButton!
     @IBOutlet weak var txtStatus: UITextView!
     @IBOutlet weak var txtClassification: UITextView!
+    @IBOutlet weak var txtDiet: UITextView!
     @IBOutlet weak var txtLife: UITextView!
     @IBOutlet weak var txtHeight: UITextView!
     @IBOutlet weak var txtWeight: UITextView!
@@ -33,6 +34,13 @@ class InfoDetail: UIView {
     func loadView() -> InfoDetail {
         let customInfoWindow = Bundle.main.loadNibNamed("InfoDetail", owner: self, options: nil)?[0] as! InfoDetail
         customInfoWindow.layer.backgroundColor = UIColor(red: 240/255, green: 240/255, blue: 240/255, alpha: 1).cgColor
+        customInfoWindow.txtStatus.layer.cornerRadius = 5
+        customInfoWindow.txtClassification.layer.cornerRadius = 5
+        customInfoWindow.txtDiet.layer.cornerRadius = 5
+        customInfoWindow.txtLife.layer.cornerRadius = 5
+        customInfoWindow.txtHeight.layer.cornerRadius = 5
+        customInfoWindow.txtWeight.layer.cornerRadius = 5
+        customInfoWindow.txtHabitat.layer.cornerRadius = 5
 //        customInfoWindow.layer.cornerRadius = 4
 //        customInfoWindow.imagePlace.layer.cornerRadius = 4
         return customInfoWindow

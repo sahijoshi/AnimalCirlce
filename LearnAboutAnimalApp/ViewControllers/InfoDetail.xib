@@ -18,15 +18,15 @@
                     <rect key="frame" x="20" y="20" width="519" height="505"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cJg-ae-S3S">
-                            <rect key="frame" x="0.0" y="0.0" width="519" height="71.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="519" height="59.5"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60E-Hh-XMF">
-                                    <rect key="frame" x="0.0" y="0.0" width="203.5" height="71.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="203.5" height="59.5"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                     <state key="normal" title="Status" backgroundImage="button"/>
                                 </button>
                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0T-cd-Vzy">
-                                    <rect key="frame" x="213.5" y="0.0" width="305.5" height="71.5"/>
+                                    <rect key="frame" x="213.5" y="0.0" width="305.5" height="59.5"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <color key="textColor" systemColor="labelColor"/>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
@@ -38,15 +38,15 @@
                             </constraints>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XhB-7M-Tr9">
-                            <rect key="frame" x="0.0" y="86.5" width="519" height="72"/>
+                            <rect key="frame" x="0.0" y="74.5" width="519" height="59"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cf5-G4-2EI">
-                                    <rect key="frame" x="0.0" y="0.0" width="203.5" height="72"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="203.5" height="59"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                     <state key="normal" title="Classification" backgroundImage="button"/>
                                 </button>
                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tc8-84-8Dt">
-                                    <rect key="frame" x="213.5" y="0.0" width="305.5" height="72"/>
+                                    <rect key="frame" x="213.5" y="0.0" width="305.5" height="59"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <color key="textColor" systemColor="labelColor"/>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
@@ -57,16 +57,36 @@
                                 <constraint firstItem="Tc8-84-8Dt" firstAttribute="width" secondItem="cf5-G4-2EI" secondAttribute="width" multiplier="1.5" id="dkH-Qa-09G"/>
                             </constraints>
                         </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Tfy-pN-ERg">
+                            <rect key="frame" x="0.0" y="148.5" width="519" height="59.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uf1-R4-nkX">
+                                    <rect key="frame" x="0.0" y="0.0" width="203.5" height="59.5"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                    <state key="normal" title="Diet" backgroundImage="button"/>
+                                </button>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pen-CU-8ca">
+                                    <rect key="frame" x="213.5" y="0.0" width="305.5" height="59.5"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <color key="textColor" systemColor="labelColor"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="Pen-CU-8ca" firstAttribute="width" secondItem="Uf1-R4-nkX" secondAttribute="width" multiplier="1.5" id="h5a-co-rD9"/>
+                            </constraints>
+                        </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="msw-cS-iDH">
-                            <rect key="frame" x="0.0" y="173.5" width="519" height="71.5"/>
+                            <rect key="frame" x="0.0" y="223" width="519" height="59"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AK1-Gn-QKj">
-                                    <rect key="frame" x="0.0" y="0.0" width="203.5" height="71.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="203.5" height="59"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
-                                    <state key="normal" title="Life Expectancy" backgroundImage="button"/>
+                                    <state key="normal" title="Lifespan" backgroundImage="button"/>
                                 </button>
                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5s-2h-EqL">
-                                    <rect key="frame" x="213.5" y="0.0" width="305.5" height="71.5"/>
+                                    <rect key="frame" x="213.5" y="0.0" width="305.5" height="59"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <color key="textColor" systemColor="labelColor"/>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
@@ -78,15 +98,15 @@
                             </constraints>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MRH-Zi-mpY">
-                            <rect key="frame" x="0.0" y="260" width="519" height="71.5"/>
+                            <rect key="frame" x="0.0" y="297" width="519" height="59.5"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kvt-dL-0Os">
-                                    <rect key="frame" x="0.0" y="0.0" width="203.5" height="71.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="203.5" height="59.5"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                     <state key="normal" title="Height" backgroundImage="button"/>
                                 </button>
                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdC-aX-XGD">
-                                    <rect key="frame" x="213.5" y="0.0" width="305.5" height="71.5"/>
+                                    <rect key="frame" x="213.5" y="0.0" width="305.5" height="59.5"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <color key="textColor" systemColor="labelColor"/>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
@@ -98,15 +118,15 @@
                             </constraints>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bhi-uc-y3O">
-                            <rect key="frame" x="0.0" y="346.5" width="519" height="72"/>
+                            <rect key="frame" x="0.0" y="371.5" width="519" height="59"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1DX-Bq-yXh">
-                                    <rect key="frame" x="0.0" y="0.0" width="203.5" height="72"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="203.5" height="59"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                     <state key="normal" title="Weight" backgroundImage="button"/>
                                 </button>
                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MjV-Ud-PO1">
-                                    <rect key="frame" x="213.5" y="0.0" width="305.5" height="72"/>
+                                    <rect key="frame" x="213.5" y="0.0" width="305.5" height="59"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <color key="textColor" systemColor="labelColor"/>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
@@ -118,15 +138,15 @@
                             </constraints>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="50n-4T-rN8">
-                            <rect key="frame" x="0.0" y="433.5" width="519" height="71.5"/>
+                            <rect key="frame" x="0.0" y="445.5" width="519" height="59.5"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMl-24-UN9">
-                                    <rect key="frame" x="0.0" y="0.0" width="203.5" height="71.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="203.5" height="59.5"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
-                                    <state key="normal" title="Habitats" backgroundImage="button"/>
+                                    <state key="normal" title="Habitat" backgroundImage="button"/>
                                 </button>
                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IY7-ee-AU8">
-                                    <rect key="frame" x="213.5" y="0.0" width="305.5" height="71.5"/>
+                                    <rect key="frame" x="213.5" y="0.0" width="305.5" height="59.5"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <color key="textColor" systemColor="labelColor"/>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
@@ -156,6 +176,7 @@
                 <outlet property="btnStatus" destination="60E-Hh-XMF" id="8Mm-dQ-fzJ"/>
                 <outlet property="btnWeight" destination="1DX-Bq-yXh" id="h2e-O9-Nb1"/>
                 <outlet property="txtClassification" destination="Tc8-84-8Dt" id="K0U-8D-gdk"/>
+                <outlet property="txtDiet" destination="Pen-CU-8ca" id="iPc-a0-chq"/>
                 <outlet property="txtHabitat" destination="IY7-ee-AU8" id="0qB-2D-Q0v"/>
                 <outlet property="txtHeight" destination="bdC-aX-XGD" id="w8a-t6-7KU"/>
                 <outlet property="txtLife" destination="N5s-2h-EqL" id="Mda-Hz-6iR"/>
