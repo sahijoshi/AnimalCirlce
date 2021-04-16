@@ -205,12 +205,24 @@ class VisionARViewController: UIViewController, UIGestureRecognizerDelegate, ARS
 
             DispatchQueue.main.async {
                 let physicalWidth: CGFloat = 0.09
-                let physicalHeight: CGFloat = 0.09
+                let physicalHeight: CGFloat = 0.1
                 let cornerRadius:CGFloat = 0.01
                 
                 var animalData = [String: String]()
-                if self.identifierString.lowercased() == "tiger" {
+                if self.identifierString.lowercased().contains("tiger") {
                     animalData = DataProvider.dataTiger()
+                }
+
+                if self.identifierString.lowercased().contains("elephant") {
+                    animalData = DataProvider.dataElephant()
+                }
+                
+                if self.identifierString.lowercased().contains("panda") {
+                    animalData = DataProvider.dataPanda()
+                }
+
+                if self.identifierString.lowercased().contains("bear") {
+                    animalData = DataProvider.dataBear()
                 }
 
                 self.infoDetail = InfoDetail().loadView()
