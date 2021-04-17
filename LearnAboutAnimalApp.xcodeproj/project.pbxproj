@@ -15,6 +15,7 @@
 		77341E7A25F99084001717A5 /* LabelScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 77341E7925F99084001717A5 /* LabelScene.sks */; };
 		77341E7E25F9909B001717A5 /* TemplateLabelNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77341E7D25F9909B001717A5 /* TemplateLabelNode.swift */; };
 		774332C2259FCB350095B88C /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774332C1259FCB350095B88C /* RoundedButton.swift */; };
+		77602C9C262AF55000BBF420 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77602C9B262AF54F00BBF420 /* QuizViewController.swift */; };
 		779AB31C2629230A00ED645E /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779AB31B2629230A00ED645E /* DataProvider.swift */; };
 		779DF93325F565B50096CCA7 /* VisionARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779DF93225F565B50096CCA7 /* VisionARViewController.swift */; };
 		779F7A6E25A23B87007898F2 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F7A6D25A23B87007898F2 /* SignupViewController.swift */; };
@@ -64,6 +65,7 @@
 		77341E7925F99084001717A5 /* LabelScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LabelScene.sks; sourceTree = "<group>"; };
 		77341E7D25F9909B001717A5 /* TemplateLabelNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateLabelNode.swift; sourceTree = "<group>"; };
 		774332C1259FCB350095B88C /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		77602C9B262AF54F00BBF420 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		779AB31B2629230A00ED645E /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		779DF93225F565B50096CCA7 /* VisionARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionARViewController.swift; sourceTree = "<group>"; };
 		779F7A6D25A23B87007898F2 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				77D0F6F1259FB4BC004A9137 /* LoginViewController.swift */,
 				779F7A6D25A23B87007898F2 /* SignupViewController.swift */,
 				779DF93225F565B50096CCA7 /* VisionARViewController.swift */,
+				77602C9B262AF54F00BBF420 /* QuizViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -471,6 +474,7 @@
 				77D0F6FF259FBD69004A9137 /* Util.swift in Sources */,
 				77D0F6DC259F704E004A9137 /* VisionViewController.swift in Sources */,
 				77D0F6E5259F720F004A9137 /* Resnet50.mlmodel in Sources */,
+				77602C9C262AF55000BBF420 /* QuizViewController.swift in Sources */,
 				77DCA7D4259D815100DA6183 /* SceneDelegate.swift in Sources */,
 				77D0F6EA259F7FE8004A9137 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */,
 			);

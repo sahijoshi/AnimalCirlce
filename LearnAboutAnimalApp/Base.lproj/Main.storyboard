@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bbo-9H-tfF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aGH-ZI-dWS">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -430,7 +430,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A1N-HH-XoM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2103" y="-767"/>
+            <point key="canvasLocation" x="3013.04347826087" y="-767.41071428571422"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eCv-VR-Osd">
@@ -475,14 +475,36 @@
                             <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eH8-fc-YtW">
                                 <rect key="frame" x="194.5" y="436" width="25" height="24"/>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mj4-Rs-OYD">
+                                <rect key="frame" x="20" y="766" width="374" height="96"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4f-SQ-M6e">
+                                        <rect key="frame" x="269" y="28" width="100" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="2vD-QT-4Df"/>
+                                            <constraint firstAttribute="height" constant="40" id="VPA-ba-yGr"/>
+                                        </constraints>
+                                        <state key="normal" title="Quiz"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="9cQ-o1-5z1"/>
+                                    <constraint firstItem="V4f-SQ-M6e" firstAttribute="centerY" secondItem="mj4-Rs-OYD" secondAttribute="centerY" id="FEq-U3-knA"/>
+                                    <constraint firstAttribute="trailing" secondItem="V4f-SQ-M6e" secondAttribute="trailing" constant="5" id="WCT-sg-Tma"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RKm-2v-BhX"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="RpG-5M-yrw" firstAttribute="trailing" secondItem="RKm-2v-BhX" secondAttribute="trailing" id="35P-uC-TJe"/>
                             <constraint firstItem="eH8-fc-YtW" firstAttribute="centerY" secondItem="wIl-Uj-4Gd" secondAttribute="centerY" id="6lR-QL-a3O"/>
+                            <constraint firstItem="mj4-Rs-OYD" firstAttribute="bottom" secondItem="RKm-2v-BhX" secondAttribute="bottom" id="7WN-yX-Eap"/>
+                            <constraint firstItem="mj4-Rs-OYD" firstAttribute="leading" secondItem="RKm-2v-BhX" secondAttribute="leading" constant="20" id="7fK-OL-y7P"/>
                             <constraint firstItem="RpG-5M-yrw" firstAttribute="bottom" secondItem="RKm-2v-BhX" secondAttribute="bottom" id="N7D-bS-sPG"/>
                             <constraint firstItem="RpG-5M-yrw" firstAttribute="leading" secondItem="RKm-2v-BhX" secondAttribute="leading" id="W1v-7p-9QQ"/>
+                            <constraint firstItem="RKm-2v-BhX" firstAttribute="trailing" secondItem="mj4-Rs-OYD" secondAttribute="trailing" constant="20" id="ZjV-k1-5LA"/>
                             <constraint firstItem="RpG-5M-yrw" firstAttribute="top" secondItem="wIl-Uj-4Gd" secondAttribute="top" id="bvF-5E-a0y"/>
                             <constraint firstItem="9g1-zK-BQt" firstAttribute="leading" secondItem="RKm-2v-BhX" secondAttribute="leading" id="eCG-gg-oKB"/>
                             <constraint firstItem="9g1-zK-BQt" firstAttribute="trailing" secondItem="RKm-2v-BhX" secondAttribute="trailing" id="oEs-Ll-Wpj"/>
@@ -491,6 +513,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="containerQuiz" destination="mj4-Rs-OYD" id="Heb-dM-a8C"/>
                         <outlet property="debugTextView" destination="9g1-zK-BQt" id="1VF-jn-53a"/>
                         <outlet property="sceneView" destination="RpG-5M-yrw" id="7iC-eY-yYB"/>
                     </connections>
@@ -498,7 +521,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dM7-v9-OiC" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="oic-Md-Mmk"/>
             </objects>
-            <point key="canvasLocation" x="140" y="137.18140929535232"/>
+            <point key="canvasLocation" x="139.13043478260872" y="136.60714285714286"/>
         </scene>
         <!--VisionAR View Controller-->
         <scene sceneID="pjM-SY-IJw">
@@ -509,13 +532,13 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5xU-Ch-hOG">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="RcG-6x-qRh" appends="YES" id="aSe-Ia-zFc"/>
                                 </connections>
                             </arscnView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9rT-Zi-cos">
-                                <rect key="frame" x="0.0" y="44" width="414" height="85"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="85"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="85" id="WAP-F9-0az"/>
                                 </constraints>
@@ -523,21 +546,54 @@
                                     <segue destination="kJ0-Kd-sZZ" kind="embed" id="r5A-EK-Qrs"/>
                                 </connections>
                             </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eT4-iU-piL">
+                                <rect key="frame" x="20" y="753" width="374" height="109"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVg-qQ-won">
+                                        <rect key="frame" x="259" y="34.5" width="110" height="40"/>
+                                        <color key="backgroundColor" red="0.074509803921568626" green="0.43529411764705883" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="3M7-mz-nRA"/>
+                                            <constraint firstAttribute="width" constant="110" id="Q0p-3l-oai"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <state key="normal" title="Quiz">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="takeQuizAction:" destination="bbo-9H-tfF" eventType="touchUpInside" id="YgE-tS-JV5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="eVg-qQ-won" firstAttribute="centerY" secondItem="eT4-iU-piL" secondAttribute="centerY" id="7DK-cM-6Ck"/>
+                                    <constraint firstAttribute="height" constant="109" id="HIV-t2-3TG"/>
+                                    <constraint firstAttribute="trailing" secondItem="eVg-qQ-won" secondAttribute="trailing" constant="5" id="dp6-IW-m0k"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gNa-Ng-nRr"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="5xU-Ch-hOG" firstAttribute="leading" secondItem="gNa-Ng-nRr" secondAttribute="leading" id="L1X-Qd-fEg"/>
                             <constraint firstItem="gNa-Ng-nRr" firstAttribute="trailing" secondItem="5xU-Ch-hOG" secondAttribute="trailing" id="TgZ-bj-75w"/>
+                            <constraint firstItem="gNa-Ng-nRr" firstAttribute="trailing" secondItem="eT4-iU-piL" secondAttribute="trailing" constant="20" id="YXc-Q9-Jdd"/>
+                            <constraint firstItem="eT4-iU-piL" firstAttribute="leading" secondItem="gNa-Ng-nRr" secondAttribute="leading" constant="20" id="aOZ-el-rn4"/>
                             <constraint firstItem="9rT-Zi-cos" firstAttribute="top" secondItem="gNa-Ng-nRr" secondAttribute="top" id="bsD-bY-pIk"/>
                             <constraint firstItem="gNa-Ng-nRr" firstAttribute="bottom" secondItem="5xU-Ch-hOG" secondAttribute="bottom" id="bsF-qp-4La"/>
+                            <constraint firstItem="eT4-iU-piL" firstAttribute="bottom" secondItem="gNa-Ng-nRr" secondAttribute="bottom" id="fVa-xZ-GBj"/>
                             <constraint firstItem="5xU-Ch-hOG" firstAttribute="top" secondItem="gNa-Ng-nRr" secondAttribute="top" id="grB-uj-5Aa"/>
                             <constraint firstItem="gNa-Ng-nRr" firstAttribute="trailing" secondItem="9rT-Zi-cos" secondAttribute="trailing" id="h7w-b3-CST"/>
                             <constraint firstItem="9rT-Zi-cos" firstAttribute="leading" secondItem="gNa-Ng-nRr" secondAttribute="leading" id="ywQ-kJ-fDb"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="z5z-GD-BZG"/>
                     <connections>
+                        <outlet property="btnQuix" destination="eVg-qQ-won" id="y0k-S4-3Da"/>
+                        <outlet property="containerQuiz" destination="eT4-iU-piL" id="E72-4w-J2N"/>
                         <outlet property="sceneView" destination="5xU-Ch-hOG" id="ybx-h1-wlO"/>
+                        <segue destination="HhR-La-72I" kind="show" identifier="quizVC" id="aKl-2B-lsS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8VH-28-YkB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -547,7 +603,23 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-326" y="-1307"/>
+            <point key="canvasLocation" x="584.05797101449275" y="-1307.1428571428571"/>
+        </scene>
+        <!--Quiz View Controller-->
+        <scene sceneID="2O0-sr-s2J">
+            <objects>
+                <viewController id="HhR-La-72I" customClass="QuizViewController" customModule="LearnAboutAnimalApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AjY-GX-X6w">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="SdF-yg-fLW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RQh-bI-hd2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vzi-Xc-sJI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1854" y="-1737"/>
         </scene>
         <!--Status View Controller-->
         <scene sceneID="nNu-bl-OMe">
@@ -634,9 +706,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZuR-f3-LNq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="943" y="-1373"/>
+            <point key="canvasLocation" x="1852.1739130434785" y="-1373.1026785714284"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Je6-RD-Zaw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aGH-ZI-dWS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HNe-wG-nXL">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.074509803920000006" green="0.43529411759999997" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bbo-9H-tfF" kind="relationship" relationship="rootViewController" id="Jn1-Xz-3xe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f8D-zC-r7W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-326.08695652173918" y="-1307.1428571428571"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="bag.fill" catalog="system" width="128" height="128"/>
         <image name="envelope.fill" catalog="system" width="128" height="93"/>

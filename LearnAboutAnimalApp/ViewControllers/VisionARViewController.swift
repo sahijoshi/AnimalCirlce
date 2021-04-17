@@ -13,12 +13,14 @@ import Vision
 class VisionARViewController: UIViewController, UIGestureRecognizerDelegate, ARSessionDelegate, ARSCNViewDelegate {
     var infoDetail: InfoDetail?
     var infoBrief: InfoBrief?
-
+    var selectedAnimal = ""
+    
+    @IBOutlet weak var btnQuix: UIButton!
+    @IBOutlet weak var containerQuiz: UIView!
     @IBOutlet weak var sceneView: ARSCNView!
     let bubbleDepth : Float = 0.01 // the 'depth' of 3D text
     var latestPrediction : String = "…"
     private var _resnet50Model: Resnet50!
-    
     private var resnet50Model: Resnet50! {
         get {
             if let model = _resnet50Model { return model }
@@ -42,7 +44,8 @@ class VisionARViewController: UIViewController, UIGestureRecognizerDelegate, ARS
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        containerQuiz.isHidden = true
+        btnQuix.layer.cornerRadius = 5
         // Configure and present the SpriteKit scene that draws overlay content.
 //        let overlayScene = SKScene()
 //        overlayScene.scaleMode = .aspectFill
@@ -69,7 +72,8 @@ class VisionARViewController: UIViewController, UIGestureRecognizerDelegate, ARS
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        navigationController?.navigationBar.isHidden = true
+
         // Create a session configuration
         let configuration = ARWorldTrackingConfiguration()
         
@@ -83,6 +87,16 @@ class VisionARViewController: UIViewController, UIGestureRecognizerDelegate, ARS
         // Pause the view's session
         sceneView.session.pause()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let destination = segue.destination as? QuizViewController {
+            if let selectedAnimal = sender as? String {
+                destination.selectedAnimal = selectedAnimal
+            }
+        }
+    }
+
     
     // MARK: - ARSessionDelegate
     
@@ -203,25 +217,30 @@ class VisionARViewController: UIViewController, UIGestureRecognizerDelegate, ARS
             let transform : matrix_float4x4 = closestResult.worldTransform
             let worldCoord : SCNVector3 = SCNVector3Make(transform.columns.3.x, transform.columns.3.y, transform.columns.3.z)
 
-            DispatchQueue.main.async {
+            DispatchQueue.main.async { [self] in
+                self.containerQuiz.isHidden = false
                 let physicalWidth: CGFloat = 0.09
                 let physicalHeight: CGFloat = 0.1
                 let cornerRadius:CGFloat = 0.01
                 
                 var animalData = [String: String]()
                 if self.identifierString.lowercased().contains("tiger") {
+                    selectedAnimal = "tiger"
                     animalData = DataProvider.dataTiger()
                 }
 
                 if self.identifierString.lowercased().contains("elephant") {
+                    selectedAnimal = "elephant"
                     animalData = DataProvider.dataElephant()
                 }
                 
                 if self.identifierString.lowercased().contains("panda") {
+                    selectedAnimal = "panda"
                     animalData = DataProvider.dataPanda()
                 }
 
                 if self.identifierString.lowercased().contains("bear") {
+                    selectedAnimal = "bear"
                     animalData = DataProvider.dataBear()
                 }
 
@@ -361,6 +380,7 @@ class VisionARViewController: UIViewController, UIGestureRecognizerDelegate, ARS
     }
 
     private func restartSession() {
+        self.containerQuiz.isHidden = true
         statusViewController.cancelAllScheduledMessages()
         statusViewController.showMessage("RESTARTING SESSION")
 
@@ -382,4 +402,9 @@ class VisionARViewController: UIViewController, UIGestureRecognizerDelegate, ARS
         alertController.addAction(restartAction)
         present(alertController, animated: true, completion: nil)
     }
+    
+    @IBAction func takeQuizAction(_ sender: Any) {
+        performSegue(withIdentifier: "quizVC", sender: selectedAnimal)
+    }
+    
 }
