@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aGH-ZI-dWS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S6G-Bn-2X9">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -221,6 +221,7 @@
                         <outlet property="txtPassword" destination="XKc-ug-JUl" id="qre-OP-wqq"/>
                         <segue destination="ZFr-Ic-k67" kind="show" identifier="SignupViewController" id="02y-gn-0WF"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="VisionViewController" id="of0-9e-neZ"/>
+                        <segue destination="bbo-9H-tfF" kind="show" identifier="VisionARViewController" id="uNw-dC-Kul"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rxc-zz-2Iq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -430,7 +431,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A1N-HH-XoM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3013.04347826087" y="-767.41071428571422"/>
+            <point key="canvasLocation" x="1639" y="-739"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eCv-VR-Osd">
@@ -440,6 +441,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="K8C-mY-OfA">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.1912065744" green="0.51870638130000002" blue="0.50777119400000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -924,12 +926,13 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="250" misplaced="YES" text="Tracking status" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="sRB-r8-2h9" userLabel="Messages label">
                                             <rect key="frame" x="16" y="8" width="93" height="16"/>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
-                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <size key="shadowOffset" width="1" height="1"/>
                                         </label>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.12941176469999999" green="0.3916624594" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstItem="sRB-r8-2h9" firstAttribute="centerX" secondItem="Uli-Yi-JaG" secondAttribute="centerX" id="3bt-zC-aXo"/>
                                         <constraint firstItem="sRB-r8-2h9" firstAttribute="leading" secondItem="Uli-Yi-JaG" secondAttribute="leading" constant="16" id="Lpp-yv-5Nh"/>
@@ -937,9 +940,7 @@
                                         <constraint firstItem="sRB-r8-2h9" firstAttribute="top" secondItem="Uli-Yi-JaG" secondAttribute="top" constant="8" id="tvV-u8-5lc"/>
                                     </constraints>
                                 </view>
-                                <vibrancyEffect>
-                                    <blurEffect style="extraLight"/>
-                                </vibrancyEffect>
+                                <blurEffect style="light"/>
                             </visualEffectView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iqc-XV-Lh5" userLabel="Restart Experience Button Icon">
                                 <rect key="frame" x="351" y="5" width="44" height="59"/>
@@ -978,32 +979,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZuR-f3-LNq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1852" y="-1279"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Je6-RD-Zaw">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aGH-ZI-dWS" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HNe-wG-nXL">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" red="0.074509803920000006" green="0.43529411759999997" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                        <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="bbo-9H-tfF" kind="relationship" relationship="rootViewController" id="Jn1-Xz-3xe"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f8D-zC-r7W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-329" y="-1564"/>
         </scene>
     </scenes>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

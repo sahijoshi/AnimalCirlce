@@ -198,7 +198,8 @@ class VisionARViewController: UIViewController, UIGestureRecognizerDelegate, ARS
         guard !self.identifierString.isEmpty else {
             return // No object was classified.
         }
-        let message = String(format: "Detected \(self.identifierString) with %.2f", self.confidence * 100) + "% confidence"
+//        let message = String(format: "Detected \(self.identifierString) with %.2f", self.confidence * 100) + "% confidence"
+        let message = "Detected: Tap on object"
         statusViewController.showMessage(message)
     }
     

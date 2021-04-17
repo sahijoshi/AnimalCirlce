@@ -45,7 +45,7 @@ class LoginViewController: UIViewController {
             case .success(let data):
                 if data.status! {
                     DispatchQueue.main.sync {
-                        self.performSegue(withIdentifier: "VisionViewController", sender: nil)
+                        self.performSegue(withIdentifier: "VisionARViewController", sender: nil)
                     }
                 }
             case .failure(let error):

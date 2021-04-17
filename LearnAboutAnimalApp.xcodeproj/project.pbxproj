@@ -99,7 +99,7 @@
 		77D0F6F6259FBC63004A9137 /* BorderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderTextField.swift; sourceTree = "<group>"; };
 		77D0F6FE259FBD69004A9137 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		77D0F704259FBDA5004A9137 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
-		77DCA7CE259D815100DA6183 /* LearnAboutAnimalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnAboutAnimalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77DCA7CE259D815100DA6183 /* LearnAnimal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnAnimal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77DCA7D1259D815100DA6183 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77DCA7D3259D815100DA6183 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		77DCA7D8259D815100DA6183 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -261,7 +261,7 @@
 		77DCA7CF259D815100DA6183 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				77DCA7CE259D815100DA6183 /* LearnAboutAnimalApp.app */,
+				77DCA7CE259D815100DA6183 /* LearnAnimal.app */,
 				77DCA7EA259D870C00DA6183 /* LearnAboutAnimalAppTests.xctest */,
 			);
 			name = Products;
@@ -330,7 +330,7 @@
 			);
 			name = LearnAboutAnimalApp;
 			productName = LearnAboutAnimalApp;
-			productReference = 77DCA7CE259D815100DA6183 /* LearnAboutAnimalApp.app */;
+			productReference = 77DCA7CE259D815100DA6183 /* LearnAnimal.app */;
 			productType = "com.apple.product-type.application";
 		};
 		77DCA7E9259D870C00DA6183 /* LearnAboutAnimalAppTests */ = {
@@ -692,7 +692,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.skj.LearnAboutAnimalApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LearnAnimal;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -715,7 +715,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.skj.LearnAboutAnimalApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LearnAnimal;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -44,6 +44,7 @@ class SignupViewController: UIViewController {
             case .success(let data):
                 if data.status! {
                     dLog(data.message)
+                    SVProgressHUD.showSuccess(withStatus: "Successfully signed up.")
                 }
             case .failure(let error):
                 dLog(error.localizedDescription)
