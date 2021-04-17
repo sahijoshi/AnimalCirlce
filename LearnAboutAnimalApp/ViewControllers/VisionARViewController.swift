@@ -226,23 +226,28 @@ class VisionARViewController: UIViewController, UIGestureRecognizerDelegate, ARS
                 let cornerRadius:CGFloat = 0.01
                 
                 var animalData = [String: String]()
+                var imageName = ""
                 if self.identifierString.lowercased().contains("tiger") {
                     selectedAnimal = "tiger"
+                    imageName = "tiger"
                     animalData = DataProvider.dataTiger()
                 }
 
                 if self.identifierString.lowercased().contains("elephant") {
                     selectedAnimal = "elephant"
+                    imageName = "elephant"
                     animalData = DataProvider.dataElephant()
                 }
                 
                 if self.identifierString.lowercased().contains("panda") {
                     selectedAnimal = "panda"
+                    imageName = "panda"
                     animalData = DataProvider.dataPanda()
                 }
 
                 if self.identifierString.lowercased().contains("bear") {
                     selectedAnimal = "bear"
+                    imageName = "bear"
                     animalData = DataProvider.dataBear()
                 }
 
@@ -281,7 +286,7 @@ class VisionARViewController: UIViewController, UIGestureRecognizerDelegate, ARS
                 infoBriefNode.position = worldCoord
                 infoBriefNode.position.x -= 0.05
                 
-                let imageView = UIImageView(image: UIImage(named: "tiger"))
+                let imageView = UIImageView(image: UIImage(named: imageName))
                 let imgMaterial = SCNMaterial()
                 imgMaterial.diffuse.contents = imageView
                 let imgPlane = SCNPlane(width: 0.07, height: 0.07)
