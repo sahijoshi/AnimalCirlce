@@ -296,27 +296,6 @@ class VisionARViewController: UIViewController, UIGestureRecognizerDelegate, ARS
     // When an anchor is added, provide a SpriteKit node for it and set its text to the classification label.
     /// - Tag: UpdateARContent
     
-//    func displayDetailView(on rootNode: SCNNode, xOffset: CGFloat) {
-//        let detailPlane = SCNPlane(width: xOffset, height: xOffset * 1.4)
-//        detailPlane.cornerRadius = 0.25
-//
-//        let detailNode = SCNNode(geometry: detailPlane)
-//        detailNode.geometry?.firstMaterial?.diffuse.contents = SKScene(fileNamed: "DetailScene")
-//
-//        detailNode.geometry?.firstMaterial?.diffuse.contentsTransform = SCNMatrix4Translate(SCNMatrix4MakeScale(1, -1, 1), 0, 1, 0)
-//        detailNode.position.z -= 0.5
-//        detailNode.opacity = 0
-//
-//        rootNode.addChildNode(detailNode)
-//        detailNode.runAction(.sequence([
-//            .wait(duration: 1.0),
-//            .fadeOpacity(to: 1.0, duration: 1.5),
-//            .moveBy(x: xOffset * -1.1, y: 0, z: -0.05, duration: 1.5),
-//            .moveBy(x: 0, y: 0, z: -0.05, duration: 0.2)
-//            ])
-//        )
-//    }
-
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
         
     }
@@ -332,7 +311,6 @@ class VisionARViewController: UIViewController, UIGestureRecognizerDelegate, ARS
         case .normal:
             statusViewController.cancelScheduledMessage(for: .trackingStateEscalation)
             // Unhide content after successful relocalization.
-            setOverlaysHidden(false)
         }
     }
     
@@ -354,7 +332,7 @@ class VisionARViewController: UIViewController, UIGestureRecognizerDelegate, ARS
     }
     
     func sessionWasInterrupted(_ session: ARSession) {
-        setOverlaysHidden(true)
+
     }
     
     func sessionShouldAttemptRelocalization(_ session: ARSession) -> Bool {
@@ -367,24 +345,18 @@ class VisionARViewController: UIViewController, UIGestureRecognizerDelegate, ARS
         return true
     }
 
-    private func setOverlaysHidden(_ shouldHide: Bool) {
-//        sceneView.scene.children.forEach { node in
-//            if shouldHide {
-//                // Hide overlay content immediately during relocalization.
-//                node.alpha = 0
-//            } else {
-//                // Fade overlay content in after relocalization succeeds.
-//                node.run(.fadeIn(withDuration: 0.5))
-//            }
-//        }
-    }
-
     private func restartSession() {
+        print("restart session")
         self.containerQuiz.isHidden = true
         statusViewController.cancelAllScheduledMessages()
         statusViewController.showMessage("RESTARTING SESSION")
-
+        
         anchorLabels = [UUID: String]()
+        
+        sceneView.session.pause()
+        sceneView.scene.rootNode.enumerateChildNodes { (node, stop) in
+            node.removeFromParentNode()
+        }
         
         let configuration = ARWorldTrackingConfiguration()
         sceneView.session.run(configuration, options: [.resetTracking, .removeExistingAnchors])

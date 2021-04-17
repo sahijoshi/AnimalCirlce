@@ -16,6 +16,10 @@
 		77341E7E25F9909B001717A5 /* TemplateLabelNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77341E7D25F9909B001717A5 /* TemplateLabelNode.swift */; };
 		774332C2259FCB350095B88C /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774332C1259FCB350095B88C /* RoundedButton.swift */; };
 		77602C9C262AF55000BBF420 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77602C9B262AF54F00BBF420 /* QuizViewController.swift */; };
+		77602CA0262B085E00BBF420 /* QuizButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77602C9F262B085E00BBF420 /* QuizButton.swift */; };
+		77602CA4262B286E00BBF420 /* QuizQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77602CA3262B286E00BBF420 /* QuizQuestions.swift */; };
+		77602CA8262B7A0600BBF420 /* ViewScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77602CA7262B7A0500BBF420 /* ViewScoreViewController.swift */; };
+		77602CAC262B7D1700BBF420 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77602CAB262B7D1700BBF420 /* CircleButton.swift */; };
 		779AB31C2629230A00ED645E /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779AB31B2629230A00ED645E /* DataProvider.swift */; };
 		779DF93325F565B50096CCA7 /* VisionARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779DF93225F565B50096CCA7 /* VisionARViewController.swift */; };
 		779F7A6E25A23B87007898F2 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F7A6D25A23B87007898F2 /* SignupViewController.swift */; };
@@ -66,6 +70,10 @@
 		77341E7D25F9909B001717A5 /* TemplateLabelNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateLabelNode.swift; sourceTree = "<group>"; };
 		774332C1259FCB350095B88C /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		77602C9B262AF54F00BBF420 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		77602C9F262B085E00BBF420 /* QuizButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizButton.swift; sourceTree = "<group>"; };
+		77602CA3262B286E00BBF420 /* QuizQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizQuestions.swift; sourceTree = "<group>"; };
+		77602CA7262B7A0500BBF420 /* ViewScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewScoreViewController.swift; sourceTree = "<group>"; };
+		77602CAB262B7D1700BBF420 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 		779AB31B2629230A00ED645E /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		779DF93225F565B50096CCA7 /* VisionARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionARViewController.swift; sourceTree = "<group>"; };
 		779F7A6D25A23B87007898F2 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				779AB31B2629230A00ED645E /* DataProvider.swift */,
+				77602CA3262B286E00BBF420 /* QuizQuestions.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -176,6 +185,7 @@
 				779F7A6D25A23B87007898F2 /* SignupViewController.swift */,
 				779DF93225F565B50096CCA7 /* VisionARViewController.swift */,
 				77602C9B262AF54F00BBF420 /* QuizViewController.swift */,
+				77602CA7262B7A0500BBF420 /* ViewScoreViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -202,6 +212,8 @@
 			children = (
 				77D0F6F6259FBC63004A9137 /* BorderTextField.swift */,
 				774332C1259FCB350095B88C /* RoundedButton.swift */,
+				77602C9F262B085E00BBF420 /* QuizButton.swift */,
+				77602CAB262B7D1700BBF420 /* CircleButton.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -459,17 +471,21 @@
 				774332C2259FCB350095B88C /* RoundedButton.swift in Sources */,
 				779F7A8425A250A9007898F2 /* WebServices.swift in Sources */,
 				779F7A8F25A25323007898F2 /* Signup.swift in Sources */,
+				77602CAC262B7D1700BBF420 /* CircleButton.swift in Sources */,
 				779F7A6E25A23B87007898F2 /* SignupViewController.swift in Sources */,
 				77341E7525F9906B001717A5 /* StatusViewController.swift in Sources */,
 				779F7A8525A250A9007898F2 /* NetworkRequest.swift in Sources */,
+				77602CA4262B286E00BBF420 /* QuizQuestions.swift in Sources */,
 				779AB31C2629230A00ED645E /* DataProvider.swift in Sources */,
 				77DCA7D2259D815100DA6183 /* AppDelegate.swift in Sources */,
 				779F7A8225A250A9007898F2 /* Router.swift in Sources */,
 				779F7A8325A250A9007898F2 /* NetworkLogger.swift in Sources */,
+				77602CA0262B085E00BBF420 /* QuizButton.swift in Sources */,
 				77D0F6F7259FBC63004A9137 /* BorderTextField.swift in Sources */,
 				77D0F705259FBDA5004A9137 /* UIColor+Extension.swift in Sources */,
 				779DF93325F565B50096CCA7 /* VisionARViewController.swift in Sources */,
 				772993C025A674B70098D778 /* Login.swift in Sources */,
+				77602CA8262B7A0600BBF420 /* ViewScoreViewController.swift in Sources */,
 				77EC3EC1261B9D47007664F9 /* InfoDetail.swift in Sources */,
 				77D0F6FF259FBD69004A9137 /* Util.swift in Sources */,
 				77D0F6DC259F704E004A9137 /* VisionViewController.swift in Sources */,
