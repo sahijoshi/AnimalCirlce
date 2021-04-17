@@ -550,7 +550,7 @@
                                 <rect key="frame" x="20" y="753" width="374" height="109"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVg-qQ-won">
-                                        <rect key="frame" x="259" y="34.5" width="110" height="40"/>
+                                        <rect key="frame" x="264" y="34.5" width="110" height="40"/>
                                         <color key="backgroundColor" red="0.074509803921568626" green="0.43529411764705883" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="3M7-mz-nRA"/>
@@ -564,12 +564,25 @@
                                             <action selector="takeQuizAction:" destination="bbo-9H-tfF" eventType="touchUpInside" id="YgE-tS-JV5"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WlP-N1-bzz">
+                                        <rect key="frame" x="0.0" y="29.5" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="nRm-Ca-Cdm"/>
+                                            <constraint firstAttribute="height" constant="50" id="os5-eb-1Eo"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="sound"/>
+                                        <connections>
+                                            <action selector="soundAction:" destination="bbo-9H-tfF" eventType="touchUpInside" id="DIN-xd-9Ac"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="WlP-N1-bzz" firstAttribute="leading" secondItem="eT4-iU-piL" secondAttribute="leading" id="4JN-FL-ur1"/>
                                     <constraint firstItem="eVg-qQ-won" firstAttribute="centerY" secondItem="eT4-iU-piL" secondAttribute="centerY" id="7DK-cM-6Ck"/>
+                                    <constraint firstItem="WlP-N1-bzz" firstAttribute="centerY" secondItem="eT4-iU-piL" secondAttribute="centerY" id="DfQ-5t-P8q"/>
                                     <constraint firstAttribute="height" constant="109" id="HIV-t2-3TG"/>
-                                    <constraint firstAttribute="trailing" secondItem="eVg-qQ-won" secondAttribute="trailing" constant="5" id="dp6-IW-m0k"/>
+                                    <constraint firstAttribute="trailing" secondItem="eVg-qQ-won" secondAttribute="trailing" id="dp6-IW-m0k"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -616,21 +629,34 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SEO-mT-XMz">
                                 <rect key="frame" x="20" y="167" width="374" height="140"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" text="What is the average life of elephant?What is the average life of elephant?What is the average life of elephant?" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RL0-Yb-PZr">
-                                        <rect key="frame" x="20" y="20" width="334" height="99"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" text="What is the average life of elephant?What is the average life of elephant?" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RL0-Yb-PZr">
+                                        <rect key="frame" x="20" y="20" width="334" height="68"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="99" id="5AY-69-H2H"/>
+                                            <constraint firstAttribute="height" constant="68" id="5AY-69-H2H"/>
                                         </constraints>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whc-B3-VSv">
+                                        <rect key="frame" x="319" y="85" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="G1k-5b-iYQ"/>
+                                            <constraint firstAttribute="height" constant="40" id="tH5-GO-eRa"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="sound"/>
+                                        <connections>
+                                            <action selector="playSound:" destination="HhR-La-72I" eventType="touchUpInside" id="5qk-n0-MjK"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="140" id="27f-k9-SGv"/>
                                     <constraint firstItem="RL0-Yb-PZr" firstAttribute="top" secondItem="SEO-mT-XMz" secondAttribute="top" constant="20" id="Cwk-W4-LGr"/>
+                                    <constraint firstAttribute="bottom" secondItem="whc-B3-VSv" secondAttribute="bottom" constant="15" id="QYy-Ib-nKp"/>
+                                    <constraint firstAttribute="trailing" secondItem="whc-B3-VSv" secondAttribute="trailing" constant="15" id="bcL-Io-1pT"/>
                                     <constraint firstAttribute="trailing" secondItem="RL0-Yb-PZr" secondAttribute="trailing" constant="20" id="wUZ-dE-r7v"/>
                                     <constraint firstItem="RL0-Yb-PZr" firstAttribute="leading" secondItem="SEO-mT-XMz" secondAttribute="leading" constant="20" id="y0A-wh-w4z"/>
                                 </constraints>
@@ -766,6 +792,7 @@
                         <outlet property="btnOption2" destination="6xU-q2-XzO" id="NUq-wg-jRs"/>
                         <outlet property="btnOption3" destination="IbP-vn-8fs" id="NXg-qx-Lsp"/>
                         <outlet property="btnOption4" destination="xXD-3N-f1y" id="AIb-fa-qkU"/>
+                        <outlet property="btnSound" destination="whc-B3-VSv" id="ge2-fo-Bvb"/>
                         <outlet property="btnYesNoOption1" destination="AOn-vC-I1r" id="4fD-G0-VYg"/>
                         <outlet property="btnYesNoOption2" destination="Kt5-TS-4Yq" id="hBt-sm-i4t"/>
                         <outlet property="containerFourOptions" destination="phV-5D-KHP" id="ER7-EA-0o3"/>
@@ -986,6 +1013,7 @@
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="restart" width="20" height="20"/>
         <image name="restartPressed" width="20" height="20"/>
+        <image name="sound" width="50" height="50"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

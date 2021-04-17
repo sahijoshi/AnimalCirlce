@@ -20,6 +20,10 @@
 		77602CA4262B286E00BBF420 /* QuizQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77602CA3262B286E00BBF420 /* QuizQuestions.swift */; };
 		77602CA8262B7A0600BBF420 /* ViewScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77602CA7262B7A0500BBF420 /* ViewScoreViewController.swift */; };
 		77602CAC262B7D1700BBF420 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77602CAB262B7D1700BBF420 /* CircleButton.swift */; };
+		77602CB3262B887800BBF420 /* tiger.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 77602CB2262B887800BBF420 /* tiger.mp3 */; };
+		77602CB7262B88B100BBF420 /* elephant.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 77602CB6262B88B100BBF420 /* elephant.mp3 */; };
+		77602CBB262B88DB00BBF420 /* panda.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 77602CBA262B88DA00BBF420 /* panda.mp3 */; };
+		77602CBF262B896C00BBF420 /* polarBear.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 77602CBE262B896C00BBF420 /* polarBear.mp3 */; };
 		779AB31C2629230A00ED645E /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779AB31B2629230A00ED645E /* DataProvider.swift */; };
 		779DF93325F565B50096CCA7 /* VisionARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779DF93225F565B50096CCA7 /* VisionARViewController.swift */; };
 		779F7A6E25A23B87007898F2 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F7A6D25A23B87007898F2 /* SignupViewController.swift */; };
@@ -74,6 +78,10 @@
 		77602CA3262B286E00BBF420 /* QuizQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizQuestions.swift; sourceTree = "<group>"; };
 		77602CA7262B7A0500BBF420 /* ViewScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewScoreViewController.swift; sourceTree = "<group>"; };
 		77602CAB262B7D1700BBF420 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		77602CB2262B887800BBF420 /* tiger.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tiger.mp3; sourceTree = "<group>"; };
+		77602CB6262B88B100BBF420 /* elephant.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = elephant.mp3; sourceTree = "<group>"; };
+		77602CBA262B88DA00BBF420 /* panda.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = panda.mp3; sourceTree = "<group>"; };
+		77602CBE262B896C00BBF420 /* polarBear.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = polarBear.mp3; sourceTree = "<group>"; };
 		779AB31B2629230A00ED645E /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		779DF93225F565B50096CCA7 /* VisionARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionARViewController.swift; sourceTree = "<group>"; };
 		779F7A6D25A23B87007898F2 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +149,13 @@
 				7CE67C4ADDF12996B61D1A8B /* Pods-LearnAboutAnimalAppTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		77602CB1262B87D700BBF420 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sound;
 			sourceTree = "<group>";
 		};
 		779AB31A262922E500ED645E /* Data */ = {
@@ -255,6 +270,11 @@
 		77DCA7D0259D815100DA6183 /* LearnAboutAnimalApp */ = {
 			isa = PBXGroup;
 			children = (
+				77602CBE262B896C00BBF420 /* polarBear.mp3 */,
+				77602CBA262B88DA00BBF420 /* panda.mp3 */,
+				77602CB6262B88B100BBF420 /* elephant.mp3 */,
+				77602CB2262B887800BBF420 /* tiger.mp3 */,
+				77602CB1262B87D700BBF420 /* Sound */,
 				779AB31A262922E500ED645E /* Data */,
 				779F7A8D25A252D8007898F2 /* Models */,
 				779F7A7C25A250A9007898F2 /* NetworkRequest */,
@@ -376,10 +396,14 @@
 			files = (
 				77EC3EC2261B9D47007664F9 /* InfoDetail.xib in Resources */,
 				77EC3EBA261B5E73007664F9 /* DetailScene.sks in Resources */,
+				77602CBB262B88DB00BBF420 /* panda.mp3 in Resources */,
+				77602CB3262B887800BBF420 /* tiger.mp3 in Resources */,
 				77DCA7DE259D815200DA6183 /* LaunchScreen.storyboard in Resources */,
 				77DCA7DB259D815200DA6183 /* Assets.xcassets in Resources */,
 				77DCA7D9259D815100DA6183 /* Main.storyboard in Resources */,
 				77341E7A25F99084001717A5 /* LabelScene.sks in Resources */,
+				77602CBF262B896C00BBF420 /* polarBear.mp3 in Resources */,
+				77602CB7262B88B100BBF420 /* elephant.mp3 in Resources */,
 				77EC3ED7261BA613007664F9 /* InfoBrief.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

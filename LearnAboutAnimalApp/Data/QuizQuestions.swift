@@ -9,6 +9,7 @@ import Foundation
 enum QuestionType {
     case normal
     case yesNo
+    case sound
 }
 
 struct Questions {
@@ -56,6 +57,13 @@ class QuizQuestions {
         quizQuestion5.answerIndex = 0
         quizQuestion5.type = .yesNo
         questions.append(quizQuestion5)
+        
+        var quizQuestion6 = Questions()
+        quizQuestion6.question = "Identify the sound of the animal."
+        quizQuestion6.options = ["Elephant", "Tiger", "Dolphin", "Dog"]
+        quizQuestion6.answerIndex = 1
+        quizQuestion6.type = .sound
+        questions.append(quizQuestion6)
 
         return questions
     }

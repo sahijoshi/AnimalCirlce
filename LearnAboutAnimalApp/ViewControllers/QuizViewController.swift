@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 struct Score {
     var score = 0
@@ -32,13 +33,16 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var containerQuestion: UIView!
     @IBOutlet weak var txtQuestion: UITextView!
     
+    @IBOutlet weak var btnSound: UIButton!
+
     var selectedAnimal = ""
     var questions = [Questions]()
     var question = Questions()
     var questionIndex = 0
     var buttons = [QuizButton]()
     var score = 0
-    
+    var player: AVAudioPlayer?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.isHidden = false
@@ -63,6 +67,8 @@ class QuizViewController: UIViewController {
     func setupUIs() {
         containerFourOptions.isHidden = true
         containerTwoOptions.isHidden = true
+        btnSound.isHidden = true
+        
         containerFourOptions.layer.cornerRadius = 5
         containerTwoOptions.layer.cornerRadius = 5
         containerQuestion.layer.cornerRadius = 5
@@ -105,6 +111,7 @@ class QuizViewController: UIViewController {
 
         containerFourOptions.isHidden = true
         containerTwoOptions.isHidden = true
+        btnSound.isHidden = true
 
         switch question.type {
         case .normal:
@@ -117,6 +124,13 @@ class QuizViewController: UIViewController {
             containerTwoOptions.isHidden = false
             btnYesNoOption1.setTitle(question.options[0], for: .normal)
             btnYesNoOption2.setTitle(question.options[1], for: .normal)
+        case .sound:
+            btnSound.isHidden = false
+            containerFourOptions.isHidden = false
+            btnOption1.setTitle(question.options[0], for: .normal)
+            btnOption2.setTitle(question.options[1], for: .normal)
+            btnOption3.setTitle(question.options[2], for: .normal)
+            btnOption4.setTitle(question.options[3], for: .normal)
         }
     }
     /*
@@ -185,6 +199,10 @@ class QuizViewController: UIViewController {
         case .yesNo:
             checkAnswer(btn)
             enableBtns(false)
+        case .sound:
+            checkAnswer(btn)
+            enableBtns(false)
+            
         }
     }
     
@@ -197,6 +215,10 @@ class QuizViewController: UIViewController {
         case .yesNo:
             checkAnswer(btn)
             enableBtns(false)
+        case .sound:
+            checkAnswer(btn)
+            enableBtns(false)
+
         }
     }
 
@@ -209,6 +231,10 @@ class QuizViewController: UIViewController {
         case .yesNo:
             checkAnswer(btn)
             enableBtns(false)
+        case .sound:
+            checkAnswer(btn)
+            enableBtns(false)
+
         }
     }
 
@@ -221,6 +247,42 @@ class QuizViewController: UIViewController {
         case .yesNo:
             checkAnswer(btn)
             enableBtns(false)
+        case .sound:
+            checkAnswer(btn)
+            enableBtns(false)
+
+        }
+    }
+    
+    @IBAction func playSound(_ sender: Any) {
+        var soundName = ""
+        if selectedAnimal.contains("tiger") {
+            soundName = "tiger"
+        }
+
+        if selectedAnimal.contains("elephant") {
+            soundName = "elephant"
+        }
+        
+        if selectedAnimal.contains("panda") {
+            soundName = "panda"
+        }
+
+        if selectedAnimal.contains("bear") {
+            soundName = "polarBear"
+        }
+        
+        DispatchQueue.main.async { [self] in
+            let url = Bundle.main.url(forResource: soundName, withExtension: "mp3")
+
+            do {
+                self.player = try AVAudioPlayer(contentsOf: url!)
+                guard let player = self.player else { return }
+
+               player.prepareToPlay()
+               player.play()
+            } catch let error { print(error.localizedDescription) }
+
         }
     }
 

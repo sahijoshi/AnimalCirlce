@@ -9,12 +9,14 @@ import UIKit
 import SpriteKit
 import ARKit
 import Vision
+import AVFoundation
 
 class VisionARViewController: UIViewController, UIGestureRecognizerDelegate, ARSessionDelegate, ARSCNViewDelegate {
     var infoDetail: InfoDetail?
     var infoBrief: InfoBrief?
     var selectedAnimal = ""
-    
+    var player: AVAudioPlayer?
+
     @IBOutlet weak var btnQuix: UIButton!
     @IBOutlet weak var containerQuiz: UIView!
     @IBOutlet weak var sceneView: ARSCNView!
@@ -377,6 +379,38 @@ class VisionARViewController: UIViewController, UIGestureRecognizerDelegate, ARS
     
     @IBAction func takeQuizAction(_ sender: Any) {
         performSegue(withIdentifier: "quizVC", sender: selectedAnimal)
+    }
+    
+    @IBAction func soundAction(_ sender: Any) {
+        var soundName = ""
+        if selectedAnimal.contains("tiger") {
+            soundName = "tiger"
+        }
+
+        if selectedAnimal.contains("elephant") {
+            soundName = "elephant"
+        }
+        
+        if selectedAnimal.contains("panda") {
+            soundName = "panda"
+        }
+
+        if selectedAnimal.contains("bear") {
+            soundName = "polarBear"
+        }
+        
+        DispatchQueue.main.async { [self] in
+            let url = Bundle.main.url(forResource: soundName, withExtension: "mp3")
+
+            do {
+                self.player = try AVAudioPlayer(contentsOf: url!)
+                guard let player = self.player else { return }
+
+               player.prepareToPlay()
+               player.play()
+            } catch let error { print(error.localizedDescription) }
+
+        }
     }
     
 }
