@@ -89,6 +89,19 @@ class QuizViewController: UIViewController {
         if selectedAnimal.lowercased() == "tiger" {
             questions = QuizQuestions.getQuizQuestionsForTiger()
         }
+        
+        if selectedAnimal.lowercased() == "elephant" {
+            questions = QuizQuestions.getQuizQuestionsForElephant()
+        }
+        
+        if selectedAnimal.lowercased() == "panda" {
+            questions = QuizQuestions.getQuizQuestionsForPanda()
+        }
+
+        if selectedAnimal.lowercased() == "bear" {
+            questions = QuizQuestions.getQuizQuestionsForPolarBear()
+        }
+
         score = 0
         questionIndex = 0
         displayQuestionAndAnswers(index: questionIndex)

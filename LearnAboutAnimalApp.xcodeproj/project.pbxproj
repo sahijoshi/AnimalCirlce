@@ -151,13 +151,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		77602CB1262B87D700BBF420 /* Sound */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Sound;
-			sourceTree = "<group>";
-		};
 		779AB31A262922E500ED645E /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,7 +267,6 @@
 				77602CBA262B88DA00BBF420 /* panda.mp3 */,
 				77602CB6262B88B100BBF420 /* elephant.mp3 */,
 				77602CB2262B887800BBF420 /* tiger.mp3 */,
-				77602CB1262B87D700BBF420 /* Sound */,
 				779AB31A262922E500ED645E /* Data */,
 				779F7A8D25A252D8007898F2 /* Models */,
 				779F7A7C25A250A9007898F2 /* NetworkRequest */,
