@@ -109,7 +109,11 @@
       "size" : "83.5x83.5"
     },
     {
+<<<<<<< HEAD
       "filename" : "ItunesArtwork@2x-1.png",
+=======
+      "filename" : "iTunesArtwork@2x-1.png",
+>>>>>>> c187159c88d15ce38ca55b39ca250dc2cbefeda1
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"
