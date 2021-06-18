@@ -12,7 +12,7 @@
         <!--Vision View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="VisionViewController" customModule="LearnAboutAnimalApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="VisionViewController" customModule="AnimalCircle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z4a-el-Cev">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -67,7 +67,7 @@
         <!--Login View Controller-->
         <scene sceneID="fpC-ku-wC2">
             <objects>
-                <viewController id="Lld-54-1Mc" customClass="LoginViewController" customModule="LearnAboutAnimalApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Lld-54-1Mc" customClass="LoginViewController" customModule="AnimalCircle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cz9-Q7-7BZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -99,7 +99,7 @@
                                                             <constraint firstAttribute="width" constant="25" id="u1O-jE-erX"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Ke-kG-fcU" customClass="BorderTextField" customModule="LearnAboutAnimalApp" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Ke-kG-fcU" customClass="BorderTextField" customModule="AnimalCircle" customModuleProvider="target">
                                                         <rect key="frame" x="30" y="5.5" width="270" height="34"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="34" id="b2r-Rd-mBL"/>
@@ -128,7 +128,7 @@
                                                             <constraint firstAttribute="width" constant="25" id="u5K-Cj-aGW"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XKc-ug-JUl" customClass="BorderTextField" customModule="LearnAboutAnimalApp" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XKc-ug-JUl" customClass="BorderTextField" customModule="AnimalCircle" customModuleProvider="target">
                                                         <rect key="frame" x="30" y="5.5" width="270" height="34"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="34" id="NwA-gI-S33"/>
@@ -161,7 +161,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivp-49-P3X" customClass="RoundedButton" customModule="LearnAboutAnimalApp" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivp-49-P3X" customClass="RoundedButton" customModule="AnimalCircle" customModuleProvider="target">
                                         <rect key="frame" x="86.5" y="271" width="127" height="40"/>
                                         <color key="backgroundColor" systemColor="systemTealColor"/>
                                         <constraints>
@@ -231,7 +231,7 @@
         <!--Signup View Controller-->
         <scene sceneID="cU4-2Z-xVv">
             <objects>
-                <viewController id="ZFr-Ic-k67" customClass="SignupViewController" customModule="LearnAboutAnimalApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZFr-Ic-k67" customClass="SignupViewController" customModule="AnimalCircle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HaJ-Me-8Cr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -263,7 +263,7 @@
                                                             <constraint firstAttribute="height" constant="25" id="uMU-1B-9uD"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DY6-A6-Kf2" customClass="BorderTextField" customModule="LearnAboutAnimalApp" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DY6-A6-Kf2" customClass="BorderTextField" customModule="AnimalCircle" customModuleProvider="target">
                                                         <rect key="frame" x="30" y="4.5" width="270" height="34"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="34" id="17c-IK-8Ld"/>
@@ -292,7 +292,7 @@
                                                             <constraint firstAttribute="height" constant="25" id="wOA-NL-mRk"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RaE-CZ-DpR" customClass="BorderTextField" customModule="LearnAboutAnimalApp" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RaE-CZ-DpR" customClass="BorderTextField" customModule="AnimalCircle" customModuleProvider="target">
                                                         <rect key="frame" x="30" y="4.5" width="270" height="34"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="34" id="5ql-Vm-p6q"/>
@@ -321,7 +321,7 @@
                                                             <constraint firstAttribute="height" constant="25" id="fhf-aP-hFF"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hiX-hG-Op6" customClass="BorderTextField" customModule="LearnAboutAnimalApp" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hiX-hG-Op6" customClass="BorderTextField" customModule="AnimalCircle" customModuleProvider="target">
                                                         <rect key="frame" x="30" y="4.5" width="270" height="34"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="34" id="vps-fe-n9R"/>
@@ -350,7 +350,7 @@
                                                             <constraint firstAttribute="height" constant="25" id="bq0-Nj-El2"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zod-YX-Y0j" customClass="BorderTextField" customModule="LearnAboutAnimalApp" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zod-YX-Y0j" customClass="BorderTextField" customModule="AnimalCircle" customModuleProvider="target">
                                                         <rect key="frame" x="30" y="4.5" width="270" height="34"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="34" id="hGl-JG-Y4A"/>
@@ -373,7 +373,7 @@
                                             <constraint firstAttribute="height" constant="200" id="w5X-KM-4bU"/>
                                         </constraints>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jtl-8n-oeO" customClass="RoundedButton" customModule="LearnAboutAnimalApp" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jtl-8n-oeO" customClass="RoundedButton" customModule="AnimalCircle" customModuleProvider="target">
                                         <rect key="frame" x="86.5" y="335" width="127" height="40"/>
                                         <color key="backgroundColor" systemColor="systemTealColor"/>
                                         <constraints>
@@ -455,7 +455,7 @@
         <!--VisionAR View Controller-->
         <scene sceneID="MDr-zd-2cF">
             <objects>
-                <viewController id="qjP-mF-OQE" customClass="VisionARViewController" customModule="LearnAboutAnimalApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qjP-mF-OQE" customClass="VisionARViewController" customModule="AnimalCircle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wIl-Uj-4Gd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -528,7 +528,7 @@
         <!--VisionAR View Controller-->
         <scene sceneID="pjM-SY-IJw">
             <objects>
-                <viewController id="bbo-9H-tfF" customClass="VisionARViewController" customModule="LearnAboutAnimalApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bbo-9H-tfF" customClass="VisionARViewController" customModule="AnimalCircle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YZI-cp-ld6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -623,7 +623,7 @@
         <!--Quiz View Controller-->
         <scene sceneID="2O0-sr-s2J">
             <objects>
-                <viewController id="HhR-La-72I" customClass="QuizViewController" customModule="LearnAboutAnimalApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="HhR-La-72I" customClass="QuizViewController" customModule="AnimalCircle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AjY-GX-X6w">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -669,28 +669,28 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="p0c-WX-ozB">
                                         <rect key="frame" x="37" y="30" width="300" height="200"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2te-Dw-1kJ" customClass="QuizButton" customModule="LearnAboutAnimalApp" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2te-Dw-1kJ" customClass="QuizButton" customModule="AnimalCircle" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="300" height="42.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
                                                     <action selector="option1Selected:" destination="HhR-La-72I" eventType="touchUpInside" id="TgU-ec-KaR"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xU-q2-XzO" customClass="QuizButton" customModule="LearnAboutAnimalApp" customModuleProvider="target">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xU-q2-XzO" customClass="QuizButton" customModule="AnimalCircle" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="52.5" width="300" height="42.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
                                                     <action selector="option2Selected:" destination="HhR-La-72I" eventType="touchUpInside" id="IL9-Sy-zIP"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IbP-vn-8fs" customClass="QuizButton" customModule="LearnAboutAnimalApp" customModuleProvider="target">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IbP-vn-8fs" customClass="QuizButton" customModule="AnimalCircle" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="105" width="300" height="42.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
                                                     <action selector="option3Selected:" destination="HhR-La-72I" eventType="touchUpInside" id="9p2-m6-2og"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXD-3N-f1y" customClass="QuizButton" customModule="LearnAboutAnimalApp" customModuleProvider="target">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXD-3N-f1y" customClass="QuizButton" customModule="AnimalCircle" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="157.5" width="300" height="42.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
@@ -740,14 +740,14 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DF2-aD-wpl">
                                         <rect key="frame" x="37" y="30" width="300" height="100"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOn-vC-I1r" customClass="QuizButton" customModule="LearnAboutAnimalApp" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOn-vC-I1r" customClass="QuizButton" customModule="AnimalCircle" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="300" height="45"/>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
                                                     <action selector="option1Selected:" destination="HhR-La-72I" eventType="touchUpInside" id="5e3-qc-ysZ"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kt5-TS-4Yq" customClass="QuizButton" customModule="LearnAboutAnimalApp" customModuleProvider="target">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kt5-TS-4Yq" customClass="QuizButton" customModule="AnimalCircle" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="55" width="300" height="45"/>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
@@ -811,7 +811,7 @@
         <!--View Score View Controller-->
         <scene sceneID="S1w-KN-xMD">
             <objects>
-                <viewController id="HDD-N8-e5U" customClass="ViewScoreViewController" customModule="LearnAboutAnimalApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="HDD-N8-e5U" customClass="ViewScoreViewController" customModule="AnimalCircle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vC6-qt-1Po">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -839,7 +839,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4vm-mT-HnM">
                                 <rect key="frame" x="57" y="435" width="300" height="50"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qg7-Rt-rO8" customClass="RoundedButton" customModule="LearnAboutAnimalApp" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qg7-Rt-rO8" customClass="RoundedButton" customModule="AnimalCircle" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="140" height="50"/>
                                         <color key="backgroundColor" red="0.04773806781" green="0.5622381568" blue="0.8737691045" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
@@ -848,7 +848,7 @@
                                             <action selector="retakeQuiz:" destination="HDD-N8-e5U" eventType="touchUpInside" id="AaZ-Uw-X29"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rQ-Xu-8Po" customClass="RoundedButton" customModule="LearnAboutAnimalApp" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rQ-Xu-8Po" customClass="RoundedButton" customModule="AnimalCircle" customModuleProvider="target">
                                         <rect key="frame" x="160" y="0.0" width="140" height="50"/>
                                         <color key="backgroundColor" red="0.127630353" green="0.80762779709999999" blue="0.1351979375" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Scan Again"/>
@@ -862,7 +862,7 @@
                                     <constraint firstAttribute="width" constant="300" id="GUV-pn-P2Z"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDI-g6-8kK" customClass="CircleButton" customModule="LearnAboutAnimalApp" customModuleProvider="target">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDI-g6-8kK" customClass="CircleButton" customModule="AnimalCircle" customModuleProvider="target">
                                 <rect key="frame" x="157" y="285" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="4Rk-aF-EfO"/>
@@ -871,6 +871,29 @@
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                 <state key="normal" title="5 / 10"/>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cRj-UG-MxQ">
+                                <rect key="frame" x="20" y="585" width="374" height="61.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quiz questions references" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="saH-l7-OsK">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://www.wwf.org.uk/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R63-Eg-hwj">
+                                        <rect key="frame" x="0.0" y="20.5" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://www.funtrivia.com/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mI6-FS-S3h">
+                                        <rect key="frame" x="0.0" y="41" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mjr-2k-ZSo"/>
                         <color key="backgroundColor" red="0.14357867839999999" green="0.17381787300000001" blue="0.28995156290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -879,9 +902,12 @@
                             <constraint firstItem="nDI-g6-8kK" firstAttribute="centerX" secondItem="vC6-qt-1Po" secondAttribute="centerX" id="Bhu-r6-phb"/>
                             <constraint firstItem="nDI-g6-8kK" firstAttribute="top" secondItem="IeX-QW-J1e" secondAttribute="bottom" constant="10" id="CvR-UN-oSI"/>
                             <constraint firstItem="IeX-QW-J1e" firstAttribute="centerX" secondItem="vC6-qt-1Po" secondAttribute="centerX" id="KU7-Ql-1Wv"/>
+                            <constraint firstItem="mjr-2k-ZSo" firstAttribute="trailing" secondItem="cRj-UG-MxQ" secondAttribute="trailing" constant="20" id="O5J-xJ-FM4"/>
                             <constraint firstItem="iYo-IS-es7" firstAttribute="centerX" secondItem="vC6-qt-1Po" secondAttribute="centerX" id="bcj-12-dW1"/>
                             <constraint firstItem="IeX-QW-J1e" firstAttribute="top" secondItem="iYo-IS-es7" secondAttribute="bottom" constant="5" id="edY-M2-9gp"/>
                             <constraint firstItem="iYo-IS-es7" firstAttribute="top" secondItem="mjr-2k-ZSo" secondAttribute="top" constant="40" id="f0N-ma-GKQ"/>
+                            <constraint firstItem="cRj-UG-MxQ" firstAttribute="leading" secondItem="mjr-2k-ZSo" secondAttribute="leading" constant="20" id="ikk-P4-Iwp"/>
+                            <constraint firstItem="cRj-UG-MxQ" firstAttribute="top" secondItem="4vm-mT-HnM" secondAttribute="bottom" constant="100" id="knl-id-feb"/>
                             <constraint firstItem="4vm-mT-HnM" firstAttribute="top" secondItem="nDI-g6-8kK" secondAttribute="bottom" constant="50" id="u0y-Py-PXG"/>
                         </constraints>
                     </view>
@@ -897,7 +923,7 @@
         <!--Status View Controller-->
         <scene sceneID="nNu-bl-OMe">
             <objects>
-                <viewController id="kJ0-Kd-sZZ" customClass="StatusViewController" customModule="LearnAboutAnimalApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kJ0-Kd-sZZ" customClass="StatusViewController" customModule="AnimalCircle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Szc-CU-XjG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="85"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -991,6 +1017,9 @@
         <image name="sound" width="50" height="50"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

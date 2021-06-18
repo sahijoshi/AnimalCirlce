@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		0789EA7B71D5C9EF29105697 /* Pods_LearnAboutAnimalAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78A798FB38F134843B9F190A /* Pods_LearnAboutAnimalAppTests.framework */; };
 		200C00F34CAE52DF548014B1 /* Pods_LearnAboutAnimalApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B5E58994F5924960A8B3B78 /* Pods_LearnAboutAnimalApp.framework */; };
+		7702217D267CA9B900859C50 /* tiger.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7702217C267CA9B900859C50 /* tiger.mp3 */; };
+		77022183267CB40000859C50 /* panda.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 77022182267CB40000859C50 /* panda.mp3 */; };
+		77022189267CB44C00859C50 /* elephant.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 77022188267CB44C00859C50 /* elephant.mp3 */; };
+		77022193267CC64B00859C50 /* animal.db in Resources */ = {isa = PBXBuildFile; fileRef = 77022192267CC64B00859C50 /* animal.db */; };
 		772993C025A674B70098D778 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772993BF25A674B70098D778 /* Login.swift */; };
 		77341E7525F9906B001717A5 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77341E7325F9906A001717A5 /* StatusViewController.swift */; };
 		77341E7625F9906B001717A5 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77341E7425F9906B001717A5 /* Utilities.swift */; };
@@ -20,9 +24,6 @@
 		77602CA4262B286E00BBF420 /* QuizQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77602CA3262B286E00BBF420 /* QuizQuestions.swift */; };
 		77602CA8262B7A0600BBF420 /* ViewScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77602CA7262B7A0500BBF420 /* ViewScoreViewController.swift */; };
 		77602CAC262B7D1700BBF420 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77602CAB262B7D1700BBF420 /* CircleButton.swift */; };
-		77602CB3262B887800BBF420 /* tiger.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 77602CB2262B887800BBF420 /* tiger.mp3 */; };
-		77602CB7262B88B100BBF420 /* elephant.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 77602CB6262B88B100BBF420 /* elephant.mp3 */; };
-		77602CBB262B88DB00BBF420 /* panda.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 77602CBA262B88DA00BBF420 /* panda.mp3 */; };
 		77602CBF262B896C00BBF420 /* polarBear.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 77602CBE262B896C00BBF420 /* polarBear.mp3 */; };
 		779AB31C2629230A00ED645E /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779AB31B2629230A00ED645E /* DataProvider.swift */; };
 		779DF93325F565B50096CCA7 /* VisionARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779DF93225F565B50096CCA7 /* VisionARViewController.swift */; };
@@ -67,6 +68,10 @@
 /* Begin PBXFileReference section */
 		05BC53C50F8A92D0C25B998F /* Pods-LearnAboutAnimalApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnAboutAnimalApp.release.xcconfig"; path = "Target Support Files/Pods-LearnAboutAnimalApp/Pods-LearnAboutAnimalApp.release.xcconfig"; sourceTree = "<group>"; };
 		2B5E58994F5924960A8B3B78 /* Pods_LearnAboutAnimalApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearnAboutAnimalApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7702217C267CA9B900859C50 /* tiger.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tiger.mp3; sourceTree = "<group>"; };
+		77022182267CB40000859C50 /* panda.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = panda.mp3; sourceTree = "<group>"; };
+		77022188267CB44C00859C50 /* elephant.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = elephant.mp3; sourceTree = "<group>"; };
+		77022192267CC64B00859C50 /* animal.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = animal.db; sourceTree = "<group>"; };
 		772993BF25A674B70098D778 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		77341E7325F9906A001717A5 /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 		77341E7425F9906B001717A5 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
@@ -78,9 +83,6 @@
 		77602CA3262B286E00BBF420 /* QuizQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizQuestions.swift; sourceTree = "<group>"; };
 		77602CA7262B7A0500BBF420 /* ViewScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewScoreViewController.swift; sourceTree = "<group>"; };
 		77602CAB262B7D1700BBF420 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
-		77602CB2262B887800BBF420 /* tiger.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tiger.mp3; sourceTree = "<group>"; };
-		77602CB6262B88B100BBF420 /* elephant.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = elephant.mp3; sourceTree = "<group>"; };
-		77602CBA262B88DA00BBF420 /* panda.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = panda.mp3; sourceTree = "<group>"; };
 		77602CBE262B896C00BBF420 /* polarBear.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = polarBear.mp3; sourceTree = "<group>"; };
 		779AB31B2629230A00ED645E /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		779DF93225F565B50096CCA7 /* VisionARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionARViewController.swift; sourceTree = "<group>"; };
@@ -99,7 +101,7 @@
 		77D0F6F6259FBC63004A9137 /* BorderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderTextField.swift; sourceTree = "<group>"; };
 		77D0F6FE259FBD69004A9137 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		77D0F704259FBDA5004A9137 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
-		77DCA7CE259D815100DA6183 /* LearnAnimal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnAnimal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77DCA7CE259D815100DA6183 /* AnimalCircle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimalCircle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77DCA7D1259D815100DA6183 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77DCA7D3259D815100DA6183 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		77DCA7D8259D815100DA6183 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 		779AB31A262922E500ED645E /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				77022192267CC64B00859C50 /* animal.db */,
 				779AB31B2629230A00ED645E /* DataProvider.swift */,
 				77602CA3262B286E00BBF420 /* QuizQuestions.swift */,
 			);
@@ -261,7 +264,7 @@
 		77DCA7CF259D815100DA6183 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				77DCA7CE259D815100DA6183 /* LearnAnimal.app */,
+				77DCA7CE259D815100DA6183 /* AnimalCircle.app */,
 				77DCA7EA259D870C00DA6183 /* LearnAboutAnimalAppTests.xctest */,
 			);
 			name = Products;
@@ -270,10 +273,10 @@
 		77DCA7D0259D815100DA6183 /* LearnAboutAnimalApp */ = {
 			isa = PBXGroup;
 			children = (
+				7702217C267CA9B900859C50 /* tiger.mp3 */,
 				77602CBE262B896C00BBF420 /* polarBear.mp3 */,
-				77602CBA262B88DA00BBF420 /* panda.mp3 */,
-				77602CB6262B88B100BBF420 /* elephant.mp3 */,
-				77602CB2262B887800BBF420 /* tiger.mp3 */,
+				77022182267CB40000859C50 /* panda.mp3 */,
+				77022188267CB44C00859C50 /* elephant.mp3 */,
 				77602CB1262B87D700BBF420 /* Sound */,
 				779AB31A262922E500ED645E /* Data */,
 				779F7A8D25A252D8007898F2 /* Models */,
@@ -330,7 +333,7 @@
 			);
 			name = LearnAboutAnimalApp;
 			productName = LearnAboutAnimalApp;
-			productReference = 77DCA7CE259D815100DA6183 /* LearnAnimal.app */;
+			productReference = 77DCA7CE259D815100DA6183 /* AnimalCircle.app */;
 			productType = "com.apple.product-type.application";
 		};
 		77DCA7E9259D870C00DA6183 /* LearnAboutAnimalAppTests */ = {
@@ -395,16 +398,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				77EC3EC2261B9D47007664F9 /* InfoDetail.xib in Resources */,
+				7702217D267CA9B900859C50 /* tiger.mp3 in Resources */,
 				77EC3EBA261B5E73007664F9 /* DetailScene.sks in Resources */,
-				77602CBB262B88DB00BBF420 /* panda.mp3 in Resources */,
-				77602CB3262B887800BBF420 /* tiger.mp3 in Resources */,
+				77022183267CB40000859C50 /* panda.mp3 in Resources */,
 				77DCA7DE259D815200DA6183 /* LaunchScreen.storyboard in Resources */,
 				77DCA7DB259D815200DA6183 /* Assets.xcassets in Resources */,
 				77DCA7D9259D815100DA6183 /* Main.storyboard in Resources */,
 				77341E7A25F99084001717A5 /* LabelScene.sks in Resources */,
 				77602CBF262B896C00BBF420 /* polarBear.mp3 in Resources */,
-				77602CB7262B88B100BBF420 /* elephant.mp3 in Resources */,
+				77022189267CB44C00859C50 /* elephant.mp3 in Resources */,
 				77EC3ED7261BA613007664F9 /* InfoBrief.xib in Resources */,
+				77022193267CC64B00859C50 /* animal.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -682,18 +686,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7S326ZG7QH;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sahi Joshi (9HC8U9CYGX)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = H7S682SCPX;
 				INFOPLIST_FILE = LearnAboutAnimalApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.skj.LearnAboutAnimalApp;
-				PRODUCT_NAME = LearnAnimal;
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.skj.learnaboutanimal;
+				PRODUCT_NAME = AnimalCircle;
+				PROVISIONING_PROFILE_SPECIFIER = DevProvisioningProfile;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -705,18 +711,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7S326ZG7QH;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Sahi Joshi (H7S682SCPX)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = H7S682SCPX;
 				INFOPLIST_FILE = LearnAboutAnimalApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.skj.LearnAboutAnimalApp;
-				PRODUCT_NAME = LearnAnimal;
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.skj.learnaboutanimal;
+				PRODUCT_NAME = AnimalCircle;
+				PROVISIONING_PROFILE_SPECIFIER = DistibutionProfile;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
